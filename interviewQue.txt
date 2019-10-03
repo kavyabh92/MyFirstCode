@@ -1,0 +1,3216 @@
+﻿*******************************HARMAN *******************************
+*************************1)Tell me about yourself .
+Am kavya . am from Belur. Currently am working as an a mobile developer in HM and also I  have hands on working in ionic also.I started my carrier as website developer in start soft mysore  and worked in hybrid application. 
+And in Hm I joined as Hybrid developer but I didn’t get change to work on that, so I started to work on android Native developer.
+
+weekness i can tell illl get tensioned when i didnt complete my work. becuase time set me not other so i have to complete that .
+My strength my only friendly and am a quick learner 
+
+*************************2)tell me about oops concept
+OOP concepts in Java are the main ideas behind Java's Object Oriented Programming. 
+Main Idea of this OOPs is Code reusability and code security and code maintainability.
+****How OOP Concepts in Java Work
+OOP, concepts in Java work by letting programmers create components that can be re-used in different ways, but still maintain security.
+****Best Practices for OOP Concepts in Java
+Since the aim of OOP concepts in Java is to save time without sacrificing security and ease of use,
+ the best practices are all oriented toward advancing that main goal.
+
+
+They are Main 4 feature in OOps an abstraction, encapsulation, inheritance, and polymorphism
+
+************************* Abstraction
+Show only the relevant details and hide the irrelevant details that are not important 
+Ex : lets Take “Car” object We only talk only about Speed ,
+ Seating and Accelerations . we don’t know or we don’t talk about the processing , marital for seat , marital used for car.  
+ 
+ Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+A method that is declared as abstract and does not have implementation is known as abstract method.
+There are two ways to achieve abstraction in java
+1- By Abstract class (0 to 100%)  , 2- By Interface (100%)
+
+
+Question: What is abstraction and abstract class in Java?
+
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+Another way, it shows only important things to the user and hides the internal details for example sending sms, you just type the text and send the message.
+ You don't know the internal processing about the message delivery.
+
+Abstraction lets you focus on what the object does instead of how it does it
+
+A class that is declared as abstract is known as abstract class. It needs to be extended and its method implemented. It cannot be instantiated.
+
+Abstract method:
+
+A method that is declared as abstract and does not have implementation is known as abstract method.
+Example abstract method
+
+
+
+Can abstract class have constructors in Java?
+Yes, abstract class can declare and define constructor in Java. Since you can not create instance of abstract class, 
+constructor can only be called during constructor chaining, i.e. when you create instance of concrete implementation class.
+
+
+ Can abstract class implements interface in Java? does they require to implement all methods?
+ 
+ Yes, abstract class can implement interface by using implements keyword. Since they are abstract, they don’t need to implement all methods.
+
+It’s good practice to provide an abstract base class, along with an interface to declare Type.
+
+
+Can abstract class be final in Java?
+
+No, abstract class can not be final in Java. Making them final will stop abstract class from being extended, 
+which is the only way to use abstract class.
+
+They are also opposite of each other, abstract keyword enforces to extend a class, for using it, on the other hand,
+ final keyword prevents a class from being extended.
+
+In real world also, abstract signifies incompleteness, while final is used to demonstrate completeness. Bottom line is, 
+you can not make your class abstract and final in Java, at same time, it’s a compile time error.
+
+-- Can you create instance of abstract class?
+No, you can not create instance of abstract class in Java, they are incomplete.
+
+Even though, if your abstract class don’t contain any abstract method, you can not create instance of it.
+
+By making a class abstract, you told compiler that, it’s incomplete and should not be instantiated.
+ Java compiler will throw error, when a code tries to instantiate abstract class.
+
+--Is it necessary for abstract class to have abstract method?
+
+No, It is not mandatory for an abstract class to have any abstract method. We can make a class abstract in Java, by just using abstract keyword 
+in its declaration.
+
+Question: What is abstract method in Java?
+An abstract method is a method without body.  It  uses abstract keyword in method declaration. 
+All method declared inside Java Interface are by default abstract. Here is an example of abstract method in Java
+
+
+Can abstract class contains main method in Java?
+Yes, abstract class can contain main method, 
+it just another static method and you can execute Abstract class with main method, until you don’t create any instance.
+
+
+
+How do we implement  abstraction 
+We can achieve by 2 things 1 is interface and 2 is abstract class 
+Abstraction:  Showing the essential and hiding the non-Essential is known as Abstraction.
+
+One of the most fundamental concept of OOPs is Abstraction. 
+Abstraction is a process where you show only “relevant” data and “hide” unnecessary details of an object from the user.
+For example, when you login to your Amazon account online, you enter your user_id and password 
+and press login, what happens when you press login, how the input data sent to amazon server, how it gets verified is all abstracted away from the you.
+
+
+
+*************************Encapsulation 
+This is the practice of keeping fields within a
+ class private and then providing 
+ access to them via public methods. 
+It’s a protective way that keeps the data and code safe within 
+the class itself. This way, we can re-use objects like code components or variables without allowing open access to the data system-wide.
+The wrapping up of data and function into single component is called Encapsulation
+The Wrapping up of data and functions into a single unit is known as Encapsulation.
+
+Encapsulation is:
+
+Binding the data with the code that manipulates it.
+It keeps the data and the code safe from external interference
+
+
+What is encapsulation?
+The whole idea behind encapsulation is to hide the implementation details from users. 
+If a data member is private it means it 
+can only be accessed within the same class. No outside class can access private data member (variable) of other class.
+
+
+However if we setup public getter and setter methods to update (for example void setSSN(int ssn))and read (for example  int getSSN()) 
+the private data fields then the outside class can access those private data fields via public methods.
+
+This way data can only be accessed by public methods thus making the private fields and their implementation hidden for outside classes.
+ That’s why encapsulation is known as data hiding. Lets see an example to understand this concept bette
+
+Advantages of encapsulation
+It improves maintainability and flexibility and re-usability: for e.g. In the above code the implementation code of void setEmpName(String name) and
+ String getEmpName() can be changed at any point of time. Since the implementation is 
+ purely hidden for outside classes they would still be accessing the private field empName using the same methods (setEmpName(String name) and getEmpName()).
+ Hence the code can be maintained at any point of time without breaking the classes that uses the code. This improves the re-usability of the underlying class.
+The fields can be made read-only (If we don’t define setter methods in the class) or write-only (If we don’t define the getter methods in the class). 
+For e.g. If we have a field(or variable) that we don’t want to be changed so we simply define the variable as private and instead of set and get both 
+we just need to define the get method for that variable. Since the set method is not present there is no way an outside class can modify the value of that field.
+User would not be knowing what is going on behind the scene. They would only be knowing that to update a field call set method and to read a field call get method but what these set and get methods are doing is purely hidden from them.
+Encapsulation is also known as “data Hiding“.
+
+What is Encapsulation?
+It is the technique of making the fields in a class private and providing access to these fields with the help of public methods.
+ If a field is declared private, it cannot be accessed by anyone outside the class, 
+thereby hiding the fields within the class. Therefore encapsulation is also referred to as data hiding.
+
+
+What is the primary benefit of encapsulation?
+The main benefit of encapsulation is the ability to modify the implemented 
+code without breaking the code of others who use our code. It also provides us with maintainability, flexibility and extensibility to our code.
+
+
+What is an interface?
+An interface is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
+
+Mention some features of interface.
+It includes -
+Interface cannot be instantiated
+An interface does not contain any constructors.
+All the methods in an interface are abstract.
+
+
+What is the difference between encapsulation and abstraction?
+1.Abstraction solves the problem at design level while encapsulation solves the problem at implementation level. 
+
+2.Abstraction is used for hiding the unwanted data and provide only the required data. On the other hand encapsulation means hiding the 
+code and data into a single unit to protect the data from outside world. 
+
+3. Abstraction lets you focus on what the object does instead of how it does it while 
+Encapsulation means hiding the internal details or mechanics of how an object does something. 
+
+4.For example: Outer Look of a Television i.e. it has a display screen and channel buttons to change channel 
+explains 'abstraction' but inner implementation detail of a television
+ i.e. how CRT and display screen are connected with each other using different circuits explains 'encapsulation'.
+
+impt+++++++++++encapsulation is a 
+programming technique that binds the class members (variables and methods) together and prevents them from being accessed by other classes
+
+What are the advantages of Encapsulation?
+Ans: There are the following advantages of Encapsulation:
+1. The encapsulated code is more flexible and easy to change with new requirements.
+2. It prevents the other classes to access the private fields.
+3. Encapsulation allows modifying implemented the code without breaking others code who have implemented the code.
+4. It keeps the data and codes safe from external inheritance. Thus, Encapsulation helps to achieve security.
+5. It improves the maintainability of the application.
+
+https://www.javabykiran.com/interview/corejava/encapsulation-interview-questions
+
+https://www.scientecheasy.com/2018/06/real-encapsulation-interview-questions-answers.html
+*************************what is the difference between abstraction and encapsulation while they both are hiding the implementation from user.plz answer me.
+Abstraction identifies which information should be visible as well as which information should be hidden. 
+Encapsulation packages the information in such a way as to hide what should be hidden,
+ and make visible what is intended to be visible. I hope that helps.
+
+
+*************************Polymorphism 
+Means my forms. means one function can take many forms means many code logic 
+
+Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism 
+in OOP occurs when a parent class's reference is used to refer to a child class object.
+
+What is polymorphism in Java ?
+Polymorphism is an 'OOPS' concept which advice use of common interface instead of concrete 
+implementation while writing code. When we program for interface, 
+our code is capable of handling any new requirement or enhancement 
+that may arise in near future due to new implementation of our common interface. If we don't use common interface and rely on concrete implementation,
+ we always need to change and duplicate most of our code to support new implementation. Its not only Java but other object oriented languages 
+ like C++ that supports polymorphism and its a fundamental along with other OOPS concepts like Encapsulation, Abstraction and Inheritance.
+
+////https://www.javabykiran.com/interview/corejava/polymorphism-interview-questions
+1.What is polymorphism and what are the types of it?
+Single task can be done in different way.
+Method overloading(compile time polymorphism),method overriding(run time polymorphism)
+
+What is method overriding?
+Specific implementation of a method for child class.
+
+3.What is method overloading?
+If a class have multiple methods by same name but different parameters, it is known as Method Overloading.
+
+
+5.What is static and dynamic binding?
+static binding type of object is determined at compile time whereas in dynamic binding type of object is determined at run time.
+
+7.can we overload main() method?
+Yes,  we can have many main() methods in a class by overloading the main method.
+
+
+8.What is run time polymorphism and compile time polymorphism?
+
+Compile time polymorphism:
+it is nothing but the method overloading in java. In simple terms we can say that a class can have more than one methods with same name but 
+with different number of arguments or different types of arguments or both.
+Runtime polymorphism:
+Runtime polymorphism or dynamic method dispatch is a process in which a call to an overridden method is resolved at runtime rather than at compile-time.
+In this process, an overridden method is called through the reference variable of a super class. 
+The determination of the method to be called is based on the object being referred to by the reference variable.
+
+
+
+
+*************************Inheritance
+Means Base class inherited data member and function from parent class 
+
+Question 1: What is Inheritance in Java? (detailed answer)
+Answer: Inheritance is an Object oriented feature which allows a class to 
+inherit behavior and data from other class. For example, 
+a class Car can extend basic feature of Vehicle class by using Inheritance. One of the most intuitive examples of Inheritance in the real 
+world is Father-Son relationship, where Son inherit Father's property. 
+If you don't know, Inheritance is the quick way to become rich :
+
+ What are different types of Inheritance supported by Java? (detailed answer)
+Answer: Java supports single Inheritance, multi-level inheritance and at some extent multiple inheritances because Java allows a class to 
+only extend another class, but an interface in Java can extend multiple inheritances.
+
+
+Question 4: Why Inheritance is used by Java Programmers? (detailed answer)
+Answer: Inheritance is used for code reuse and leveraging Polymorphism by creating a type hierarchy. 
+It's better to use Inheritance for type declaration but for code reuse composition is a better option because it's more flexible. 
+See this article for learning more about why Composition is better than Inheritance.
+
+
+Question 5: How to use Inheritance in Java? (detailed answer)
+Answer: You can use Inheritance in Java by extending classes and implementing interfaces.
+ Java provides two keywords extends and implements to achieve inheritance.
+ A class which is derived from another class is known as a subclass and an interface which is derived from another interface is called subinterface.
+ A class which implements an interface is known as implementation.
+
+Question 6: What is the syntax of Inheritance? (detailed answer)
+Answer: You can use either extends of implements keyword to implement Inheritance in Java.
+  A class extends another class using extends keyword, 
+  an interface can extend another interface using extend keyword, and a class can implement an interface using implements keyword in Java.
+
+
+Question 8: What is the difference between Inheritance and Abstraction? (detailed answer)
+Answer: Abstraction is an object oriented concept which is used to simply things by abstracting details. 
+It helps in the designing system. On the other hand, Inheritance allows code reuse. You can reuse the functionality you have already c
+oded by using Inheritance. See Head First Object Oriented Analysis and Design for more details.
+
+
+
+***************************b/w abstraction and encapsulation
+What is difference between abstraction and encapsulation?
+Encapsulation is wrapping, just hiding properties and methods. Encapsulation is used 
+for hide the code and data in a single unit to protect the data from the outside the world.
+ Class is the best example of encapsulation. Abstraction on the other hand means showing only
+ the necessary details to the intended user.
+Which data member can be inherited or not that will be decide based on encapsulation 
+by making data member and function private , public and 
+ 
+***************************What is an Abstract Class and Abstract Method in Java? When Should I use it? Tutorial Attached
+What is an Abstract Class?
+partial definition of an a object is called abstract class   
+An abstract class is a class that is declared abstract
+Abstract classes cannot be instantiated
+Abstract classes can be subclassed
+It may or may not include abstract methods
+When an abstract class is subclassed, the subclass usually provides implementations for all of the abstract methods in its parent class
+If subclass doesn’t provide implementations then the subclass must also be declared abstract.
+
+***************************Can I define an abstract class without adding an abstract method?
+Of course yes. Declaring a class abstract only means that you don’t allow it to be instantiated on its own. 
+You can’t have an abstract method in a non-abstract class.
+
+***************************What is an Abstract Method?
+An abstract method is a method that is declared without an implementation.
+It just has a method signature.
+
+****************************
+Beginners Guide to Java Interface? How to use it? Java Tutorial Example Attached
+
+
+An interface is just a contract, a description of the behavior an implementing class will have. 
+The implementing class ensures, that it will have these methods that can be used on it.
+ It is basically a contract or a promise the class has to make.
+What if in your projects all of the various implementations share the same method signatures? Interface works best in that case.
+At the later stage after major project implementation let’s see if you have implemented 
+interface definitions to ~50 places, what if you change interface? You have to make modification to all 50 places in your projects.
+It’s advisable to spend some more time defining Interface during design phase rather change it at later stage 🙂
+An interface is consist of singleton variables (public static final) and public abstract methods. 
+We normally prefer interface in real time when we know what to do but don’t know how to do. An interface cannot contain instance fields.
+The classes which implement the Interface must provide the method definition for all the methods present.
+A Class may implement several interfaces.
+An interface implementation may be added to any existing third party class.
+An interface can contain any number of methods.
+In Java you cannot instantiate an interface.
+An Interface does not contain any constructors.
+An interface is not extended by a class; it is implemented by a class.
+An interface can extend multiple interfaces.
+
+Like a class, an interface can have methods and variables,
+ but the methods declared in interface are by default abstract (only method signature, no body).  
+
+Interfaces specify what a class must do and not how. It is the blueprint of the class.
+An Interface is about capabilities like a Player may be an interface and any class implementing
+Player must be able to (or must implement) move(). So it specifies a set of methods that the class has to implement.
+If a class implements an interface and does not provide method bodies for all functions specified in the interface, then class must be declared abstract.
+A Java library example is, Comparator Interface. If a class implements this interface, then it can be used to sort a collection.
+Syntax :
+
+interface <interface_name> {
+    
+    // declare constant fields
+    // declare methods that abstract 
+    // by default.
+}
+
+To declare an interface, use interface keyword.
+ It is used to provide total abstraction. 
+ That means all the methods in interface are declared with empty body and
+ are public and all fields are public, static and final by default
+ . A class that implement interface must implement all the methods declared in the interface. To implement interface use implements keyword.
+
+Why do we use interface ?
+
+It is used to achieve total abstraction.
+Since java does not support multiple inheritance in case of class, but by using interface it can achieve multiple inheritance .
+It is also used to achieve loose coupling.
+Interfaces are used to implement abstraction. So the question arises why use interfaces when we have abstract classes?
+The reason is, abstract classes may contain non-final variables, whereas variables in interface are final, public and static.
+
+filter_none
+edit
+play_arrow
+
+brightness_4
+// A simple interface 
+interface Player 
+{ 
+    final int id = 10; 
+    int move(); 
+} 
+To implement an interface we use keyword: implement
+
+filter_none
+edit
+play_arrow
+
+brightness_4
+// Java program to demonstrate working of  
+// interface. 
+import java.io.*; 
+  
+// A simple interface 
+interface in1 
+{ 
+    // public, static and final 
+    final int a = 10; 
+  
+    // public and abstract  
+    void display(); 
+} 
+  
+// A class that implements interface. 
+class testClass implements in1 
+{ 
+    // Implementing the capabilities of 
+    // interface. 
+    public void display() 
+    { 
+        System.out.println("Geek"); 
+    } 
+  
+    // Driver Code 
+    public static void main (String[] args) 
+    { 
+        testClass t = new testClass(); 
+        t.display(); 
+        System.out.println(a); 
+    } 
+} 
+
+Important points about interface or summary of article:
+
+We can’t create instance(interface can’t be instantiated) of interface but we can make reference of it that refers to the Object of its implementing class.
+A class can implement more than one interface.
+An interface can extends another interface or interfaces (more than one interface) .
+A class that implements interface must implements all the methods in interface.
+All the methods are public and abstract. And all the fields are public, static, and final.
+It is used to achieve multiple inheritance.
+It is used to achieve loose coupling.
+New features added in interfaces in JDK 9 
+From Java 9 onwards, interfaces can contain following also
+
+Static methods
+Private methods
+Private Static methods
+
+*************************can an interface inherit from another interface java
+interface extends another interface but not implements it,
+because interface will not contain the implementation (you cannot provide implementation in the interface).
+So you can just extend it but not implement it.
+
+Implements denotes defining an implementation for the methods of an interface. 
+However interfaces have no implementation so that's not possible. An interface can however 
+extend another interface, which means it can add more methods and inherit its type.
+
+implements means a behaviour will be defined for abstract methods (except for abstract classes obviously), you define the implementation.
+
+extends means that a behaviour is inherited.
+
+************************* Difference between == and .equals() method in Java
+
+In general both equals() and “==” operator in Java are used to compare objects to check equality but here are some 
+of the differences between the two:
+
+Main difference between .equals() method and == operator is that one is method and other is operator.
+We can use == operators for reference comparison (address comparison) and .equals() method for content comparison.
+ In simple words, == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
+If a class does not override the equals method, then by default it uses equals(Object o) 
+method of the closest parent class that has overridden this method. See this for detail
+
+*************************Association VS Dependency
+Association – what is the relationship b/w 3 object in 2 class
+Association can be class A has funtion of class B or member of class b.
+When one class depend on other class data member that is called dependency.
+Like without that it wont execute. 
+Dependency  when calss B has function and the param of the function would be object of the class A
+
+*************************What is the difference between a regular .png and a nine-patch image?
+Answer: This is one of the most popular Android Interview questions, asked in several interviews ranging from 1 to 2 years of experience to 5 years.
+ The answer is, It is a resizable bitmap resource that can be used for backgrounds or other images on the device.
+
+*************************The NinePatch class permits drawing a bitmap in nine sections. The nine patch images have extension as.9.png.
+ It allows extension in 9 ways e.g. 4 corners that are unscaled, 4 edges that are scaled in 1 axis, and the middle one that can be scaled into both axes.
+ 
+Question 2: What is an ANR notification in Android?
+Answer: ANR is short for Application Not Responding. Android systems show this dialog if the application is performing too much of task on
+ the main thread and been unresponsive for a long period of time.
+ 
+ *************************How to share content using Android Share Intent?
+Share intent is an easy and convenient way of sharing content of your application with other apps.
+
+*************************Question 4: When does onResume() method call?
+Another frequently asked android interview question. onResume() method is an activity lifecycle method. 
+This is called when the activity comes to the foreground. You can override this method in your activity to execute 
+code when activity is started, restarted or comes to the foreground.
+ See The Complete Android Nought 7 Developer Course to learn more about life-cycle of events in Android.
+
+Here is a nice diagram which explains the sequence of different callback methods in Android, including onResume():
+
+*************************Intorduction to Unit Testing – Why should you start writing unit tests
+Android has 3 different type of test
+1)Local unit test
+
+*************************android-activity-launch-mode
+There are four launch modes for activity. They are:
+1. standard
+
+This is the default launch mode of an activity (If not specified). It creates a new instance of an activity in the task from which it was started. 
+Multiple instances of the activity can be created and multiple instances can be added to the same or different tasks.
+ In other words you can create the same activity multiple times in the same task as well as in different tasks.
+ 
+ A -> B -> C -> D -> B
+ 
+ 
+2. singleTop
+
+In this launch mode if an instance of activity already exists at the top of the current task, a new instance will not be created and Android system will 
+route the intent information through onNewIntent().
+ If an instance is not present on top of task then new instance will be created.
+ 
+A -> B -> C -> D
+State of Activity Stack after launch D activity
+A -> B -> C -> D (Here old instance gets called and intent data route through onNewIntent() callback)
+
+
+3. singleTask
+
+In this launch mode a new task will always be created and a new instance will be pushed to the task as the root one.
+ If an instance of activity exists on the separate task, a new instance will not be created and Android system routes the intent information through onNewIntent() method.
+ At a time only one instance of activity will exist.
+ 
+ 
+4. singleInstance
+This is very special launch mode and only used in the applications that has only one activity. It is similar to singleTask except that no other activities will be created in the same task.
+ Any other activity started from here will create in a new task.
+
+
+FLAG_ACTIVITY_NEW_TASK
+This flag works similar to “launchMode = singleTask”.
+
+FLAG_ACTIVITY_CLEAR_TASK
+
+This flag will cause any existing task that would be associated with the activity to be cleared before the activity is started. 
+The activity becomes the new root of an otherwise empty task, and any old activities are finished.
+
+
+*************************job Schecular
+
+Since Android Oreo, idle apps can’t keep background services running anymore. So if you need to do operations even if your app is not running in the foreground,
+ you should use a JobScheduler instead.
+In this video we will set up such a JobScheduler by creating a class that extends JobService and then scheduling it with the JOB_SCHEDULER_SERVICE.
+In the JobService class, we override onStartJob and onStopJob. In onStartJob we will start a background thread to do some long running (fake) operations. 
+In onStopJob we cancel our work because the system will release the wakelock when the criteria for our job are not met anymore 
+(for example we required an unmetered network and the user disables WiFi). In this case we will reschedule our task to try again later.
+When we schedule our job, we pass a JobInfo object to the JobScheduler, which will define under which circumstances we want the system to 
+execute our job. Here we can set criteria like setRequiresDeviceCharging, setRequiredNetworkType, setPeriodic and more.
+ We can even make it survive device reboots with setPersisted.
+Lastly we register our JobService in the manifest with the android.permission.BIND_JOB_SERVICE permission and 
+the system will then start our service at the appropriate time, even if our app is not running.
+
+https://codinginflow.com/tutorials/android/jobscheduler
+*************************How is JobIntentService related to JobService?
+
+JobIntentService is essentially a replacement for IntentService, offering similar semantics in a way that "plays nice" 
+with Android O's new background execution restrictions. 
+It is implemented as a scheduled job on O+, but that's abstracted away -- your app doesn't need to care that it's a job.
+
+Never schedule() a job directly that you expect to use via the JobIntentService support class. 
+JobIntentService uses the enqueue() system in the job scheduler, and you cannot mix and match enqueue() and schedule() for the same job.
+
+
+JobService is used to schedule background work with JobScheduler. The above code snippet for ExampleJobService.class can be used to start a JobService.
+
+Where as, a JobIntentService can be started using below code:
+
+// JobIntentService for background task
+Intent i = new Intent(context, ExampleJobIntentService.class);
+ExampleJobIntentService.enqueueWork(context,i);
+The JobIntentService is capable to work for both before and after Android Oreo devices.
+
+When running on older than Oreo versions of the platform, 
+JobIntentService will use Context.startService. When running on Android O or later, the work will be dispatched as a job via JobScheduler.enqueue.
+
+
+https://www.youtube.com/watch?v=Oenqq3ZCo9Q&list=PLrnPJCHvNZuBhmqlWEQfvxbNtY6B_XJ3n&index=3  impt
+*************************Understanding the Android Application Class
+
+The Application class in Android is the base class within an Android app that contains all other components such as activities and services. 
+The Application class, or any subclass of the Application class, is instantiated before any other class when the process for y
+our application/package is created
+
+
+This class is primarily used for initialization of global state before the first Activity is displayed.
+ Note that custom Application objects should be used carefully and are often not needed at all.
+
+
+*************************What is the difference between Room and SQLite?
+
+Room is an ORM, Object Relational Mapping library. In other words, Room will map our database objects to Java objects. 
+Room provides an abstraction layer over SQLite to allow fluent database access while harnessing the full power of SQLite.
+
+Difference between SQLite and Room persistence library:-
+
+In case of SQLite, There is no compile time verification of raw SQLite queries. But in Room there is SQL validation at compile time.
+As your schema changes, you need to update the affected SQL queries manually. Room solves this problem.
+You need to use lots of boilerplate code to convert between SQL queries and Java data objects. But, Room maps our database objects to Java Object without 
+boilerplate code.
+Room is built to work with LiveData and RxJava for data observation, while SQLite does not.
+Room annotations and main components:
+
+@Entity — Define our database tables
+@DAO — Provide an API for reading and writing data
+@Database — Represent a database holder
+
+compile-time verification of SQL queries — each @Query and @Entity is checked at the compile time, so there’s no risk of runtime error that might crash your app (and it doesn’t check only syntax, but also e.g. missing tables)
+very little boilerplate code
+full integration with other Architecture components (like LiveData)
+*************************
+*************************
+*************************
+
+
+
+************************* What is the difference between an implicit intent and explicit intent?
+
+ implicit:-
+Implicit intent when you call system default intent like send email, send SMS, dial number etc
+e.g.:
+Intent sendIntent = new Intent();
+sendIntent.setAction(Intent.ACTION_SEND);
+sendIntent.putExtra(Intent.EXTRA_TEXT, textMessage);
+sendIntent.setType("text/plain")
+startactivity(sendIntent);
+
+ Explicit:-
+Explicit intent when you call you're on application activity from one activity to another
+e.g. first activity to second activity
+Intent intent = new Intent(first.this, second.class);
+startactivity(intent);
+
+*************************Question 7: What is APK format?
+The APK file is compressed AndroidManifest.XML file with extension.apk, 
+Which have application code (.dex files), resource files, and other files which are compressed into a single .apk file.
+
+************************* What is Dalvik Virtual Machine?
+Just like Java application run on Oracle HotSpot JVM or Azul JVM,  Android application runs on the Dalvik Virtual Machine.
+
+*************************What is an action in Android?
+
+A description of something that an Intent sender desire is called Action in Android.
+
+
+*************************Composition  VS Aggregation
+
+Aggregation means Has a relation 
+Class C and Class b 
+B extends c
+B is a c 
+C extend a
+A is a b
+A is a c
+Composition a part wont exits without Voll entity
+Composition is stronger version of aggregation 
+In aggregation A can exist without B 
+In composition B cant exist without A
+
+
+*************************Difference between Abstraction and Encapsulation in Java - OOP
+
+1)In Java, Abstraction is supported using interface and abstract class 
+while Encapsulation is supported using access modifiers e.g. public, private and protected.
+2)Abstraction solves the problem at design level while Encapsulation solves at the implementation level. 
+Both are very important for an OOP programmer but sometimes it can be difficult to explain.
+
+
+
+Abstraction : 
+1)Abstraction solves the problem and issues that arise at the design stage.
+2)Abstraction allows you to focus on what the object does instead of how it does it
+3)You can use abstraction using Interface and Abstract Class.
+4)Focus mainly on what should be done.
+5)During design level.
+
+
+Encapsulation:	  
+1)Encapsulation solves the problem and issue that arise at the implementation stage.
+2)Encapsulation enables you to hide the code and data into a single unit to secure the data from the outside world.
+3)You can implement encapsulation using Access Modifiers (Public, Protected & Private.)
+4)Focus primarily on how it should be done.
+5)During the Implementation level.
+
+
+
+*************************Difference between Abstraction and Polymorphism in Java - OOP
+
+Polymorphism means different forms. The basic concept of an abstract class is that it only declares the method, it does not provide the implementation for them . A subclass extending an abstract class provides their own implementation for these abstract methods so this how they achieve polymorphism
+How is polymorphism implemented using an abstract class?
+
+************************* Android Volley vs Retrofit | Better Approach?
+https://www.truiton.com/2015/04/android-volley-vs-retrofit-better-approach/
+Now-days almost every Android app uses a REST web API for data transfer. This makes me think what are the best practices to parse data and images 
+from a REST web service. Earlier I used to prefer, writing my own code for parsing data.
+ But now we have a whole range of REST client libraries, which can speed up the development, by reducing coding efforts 
+ and parsing data efficiently. Android Volley and Retrofit are two of the most used libraries for accessing REST web APIs today.
+ For any one choosing between them is a difficult task. In this article we will not only compare Android Volley vs Retrofit,
+ but will also discuss, out of these two, taking which one would be a better approach.
+
+Research has proven that using an external library like Android Volley or Retrofit, definitely reduces time taken to parse a response. 
+Therefore if you are building up a new project, I would strongly recommend to use either one of them to enhance your development.
+ These libraries not only ease the development effort but also, 
+ give you many great features like retry mechanism, automatic parsing of data and caching. 
+ Although these libraries can increase the size of your apk a little, but still they are worth it
+ . Before starting the comparison let me first introduce these libraries:
+
+Volley Library:
+Volley is a networking library, developed by Google engineers.
+ It was introduced in Google IO 2013, it offers great features like 
+ synchronous requests, asynchronous requests, 
+ prioritization, 
+ making multiple requests at the same time, 
+ ordered requests and of course caching. But one of the major problems faced by developers using this library is that 
+ it lacks detailed official documentation. Hence if you wish to learn more about it please refer to some of my tutorials:
+
+
+Retrofit Library v1.9.0:
+On the other hand Retrofit is a clean, simple, and light library for Android by Square, Inc. In other words,
+ Retrofit is a REST client for Android, through which you can make easy to use interfaces which can turn any Android app into a powerful one. 
+ What makes it different is that, Retrofit can perform Async and sync requests with automatic JSON parsing without any effort.
+ This feature alone makes it powerful enough to make a contender for this comparison. Although it has many more easy to use features, 
+ please refer to one of my tutorials to read more about them:
+
+Android Retrofit Example
+ 
+
+Android Volley vs Retrofit
+1) Request Execution
+One of the most important factors effecting the code complexity is, how a request is executed in your code.
+ In background or in foreground? As you may know that Android OS does not allow the network interaction on main thread,
+ it throws a NetworkOnMainThreadException. 
+ To avoid this you may need to do all the network processing in background. As a matter of fact both Android Volley and Retrofit 
+ support the background requests. Also both of them are designed in a way, that you may not have to write huge amounts of code to perform such requests.
+ Although if you wish to do a request in foreground, even that it possible in both. As there are situations w
+ hen you may want to block user from going further ahead in your app until a response is captured from web API.
+
+
+ 
+2) In-Built Request Types
+The data returned from a web service always complicates the implementation, but thankfully now with help of these libraries almost all types of 
+responses can be captured. Android Volley can capture four types of responses automatically through these requests:
+
+StringRequest – Make this type of request and the returned data is parsed and converted in to a String.
+JsonObjectRequest – This type of request converts the response in to a JSONObject.
+JsonArrayRequest – Make this type of request and response is automatically converted into a JSONArray.
+ImageRequest – This type of request converts the response into a decoded bitmap automatically.
+
+On the other hand Retrofit can parse many other types of responses automatically like:
+
+Boolean – Web API response needs to be a String boolean.
+Integer – Web API response needs to be an integer.
+Date– Web API response should be Long format date.
+String – Web API response needs to be in String format.
+Object – Web API response needs to be in Json object.
+Collections – Web API response needs to be in a String Format.
+
+Now when comparing Android Volley vs Retrofit, volley may have image parsing feature but it cannot convert a Json object directly into a POJO 
+(Plain Old Java Object). On the other hand retrofit can automatically convert a JSON object into a POJO, but lacks image parsing.
+
+3) Retry Mechanism
+One of the great things about volley is that it supports retries on request timeout.
+While creating requests with volley, we can set a retry policy by using setRetryPolicy method.
+ By default a volley request timeout time is set to 5 seconds.
+ But if you wish to change the policy, it supports that too. You can specify these parameters according to your needs:
+
+Timeout
+Number Of Retries
+Back Off Multiplier
+Retrofit on the other hand does not have a retry mechanism as of now. Although I just saw their road map for 2.0 version,
+ they might have a retry mechanism then. Therefore as of now when comparing Android Volley vs Retrofit, Retrofit loses this one.
+
+4) Caching
+Android Volley library has a very elaborate caching mechanism. This is one of the best features of volley.
+ When a request is made through volley first it is checked in the cache.
+ If an appropriate response is present in cache then it is parsed and returned directly to main thread,
+ else a network request is made. This whole functionality can be customized, to support your requirements. If you wish to learn more about it please go through this document.
+
+Retrofit on the hand, does not support caching. Although it can implement RFC 2616 caching which is the spec for HTTP caching, through the OkHttpClient. As stated in this document. Therefore when comparing caching between Android Volley and Retrofit, Volley takes this one too.
+
+5) Loading Images
+Volley library has a special type of request to get images from network called ImageRequest. When this type of request is made, 
+response is captured as a bitmap. Also it supports the resizing of returned image in the worker thread itself, 
+which saves a lot of coding. Volley also has a NetworkImageView class which can be used with ImageLoader class, 
+to automatically load images, whenever the NetworkImageView appears. Read this tutorial for more information about it.
+
+As of now Retrofit does not support the loading of images, the way they are loaded in Volley. But it can be combined with OkHttpClient to support the loading of images. Hence volley takes this one too.
+
+6) Code Complexity
+Both the libraries Android Volley and Retrofit are very easy to implement. If you compare them with primitive ways of accessing a web API,
+ both of them would come out as a winner as they can phenomenally reduce your code base. But in my opinion when you compare the Android Volley vs Retrofit, the later one- Retrofit wins this one. As there is not much to customize in Retrofit. Its a simple yet powerful library. Volley on the other hand is highly customizable and has a greater code complexity.
+*************************What is the difference between the "throw" and "throws" keywords?
+
+The main difference between throw and throws is like "One declares it and the other one actually does it."
+
+throw keyword is used to throw exception  explicitly from any method or static block while throws keyword is used in method declaration, 
+denoted which exception can possible be thrown by this method.
+throw is followed by an instance while throws is followed by exception class name.
+throw is used within the method where as throws is used with the method signature.
+You cannot throw multiple exceptions using throw but you can declare multiple exception using throws one of which may or may not throw by method.
+eg. public void method() throws IOException, SQLException{}
+throw statement will create exception object but throws statement will not create exception object.
+throws keyword is used to make exception to be propagated explicitly to parent method(caller method) but when we use throw keyword and throw the exception, then it is not necessary that exception will be propagated. It may propagate if it is unchecked exception and it may not propagate if it is checked exception.
+throws keyword not needed to be used for unchecked exception to make it propagate to parent method(caller method) because they can be propagated by default but throws keyword should and must be used to handle exception in parent method if it is checked exception because checked exception can not be propagated by default.
+Using throw keyword you can also break a switch statement or a loop without using break keyword which cannot be performed using throws.
+
+*************************Difference Between Iterator and Enumeration Interface in Java
+September 1, 2016 Leave a Comment
+
+Iterator vs EnumerationThe three cursors that are used to access the elements from any collection one by one are Enumeration, Iterator and ListIterator. Though, Iterator and Enumerator are meant for performing the same work. Still, they are distinct from each other in a sense that Enumeration has read-only access to the elements in the collection. On the other side, Iterator can read as well as remove the elements from the collection. The important difference between the Iterator and Enumeration is that the Enumeration can’t be applied on the collection classes it is only applicable on the legacy classes. On the other hand, the Iterator is applicable to the collection classes hence, it is referred as a universal cursor. Let us learn some more difference between Iterator and Enumeration with the help of the comparison chart shown below.
+
+
+BASIS FOR COMPARISON	ITERATOR	ENUMERATION
+Basic	Iterator is a universal cursor as it is applicable for all the collection classes.	Enumeration is not a universal cursor as it applies 
+only to legacy classes.
+Access	Using Iterator you can read and remove the elements in the collection.	Using Enumeration you can only read the elements in the collection.
+Methods	public boolean hasnext();
+public objects next();
+public void remove();	public boolean hasMoreElements();
+public object nextElement();
+Limitation	Iterator is a unidirectional forward access cursor.
+Iterator can not replace any element in the collection.
+Iterator can not add any new element in the collection.	Enumeration is unidirectional forward access cursor.
+Enumeration support only legacy classes.
+Enumeration has only read-only access to the elements in a collection.
+Overcome	To overcome the limitations of Iterator you must opt for ListIterator.	To overcome the limitations of Enumeration you must opt for Iterator.
+
+
+
+Difference Between List and Set in Java
+July 28, 2016 Leave a Comment
+
+List and SetList and Set interface extends Collection. Both of them maintains the collection of elements or objects.
+ But, the major difference that distinguishes them from each other is List is a collection of ordered element, 
+ the elements are added or remove or accessed with the help of an index variable. 
+ On the other hand, Set is a collection of objects where the collection does not allow duplicate elements in  it. 
+ Let us study some more differences between List and Set interfaces with the help of comparison chart shown below.
+
+Difference Between List and Set in Java
+July 28, 2016 Leave a Comment
+
+List and SetList and Set interface extends Collection. 
+Both of them maintains the collection of elements or objects. But, the major difference that distinguishes 
+them from each other is List is a collection of ordered element, 
+the elements are added or remove or accessed with the help of an index variable. On the other hand,
+ Set is a collection of objects where the collection does not allow duplicate elements in  it. Let us study some more differences between List and Set interfaces with the help of comparison chart shown below.
+
+Content: List Vs Set Interface
+Comparison Chart
+Definition
+Key Differences
+Conclusion
+
+Comparison Chart
+BASIS FOR COMPARISON	LIST	SET
+Basic	List maintains the sequence of the elements stored in a list.	Set does not particularly maintain insertion order but, 
+Linked HashSet maintains the insertion order.
+Duplication	List may have duplicate elements in it.	The add() method returns false if you try to insert the duplicate elements.
+
+
+Key Differences Between List and Set Interface in Java
+The sequence of elements /object in a collection is maintained in List whereas, Set does not maintain the order of the elements but
+there is an exception LinkedHashSet maintain the insertion order.
+List can have duplicate elements as it identifies any element with its index but,
+Set does not allow any duplicate elements as it does not have any index kind of element to identify any object in a collection.
+List define some methods by its own, in addition to the methods defined in Collection. On the other hand,
+Set does not define any method of its own, but it restricts the methods of Collection to add any duplicate elements.
+List is implemented by ArrayList, LinkedList, CopyOnWriteArrayList, Vector, Stack interfaces.
+ On the other hand, Set is implemented by HashSet, LinkedHashSet, EnumSet, TreeSet, CopyOnWriteArraySet interfaces.
+
+Implementation	List is implemented by ArrayList, LinkedList, CopyOnWriteArrayList, Vector, Stack.	
+Set is implemented by HashSet, LinkedHashSet, EnumSet, TreeSet, CopyOnWriteArraySet.
+
+*************************Difference Between Iterator and ListIterator in Java
+BASIS FOR COMPARISON	ITERATOR	LISTITERATOR
+Basic	Iterator can traverse the elements in a collection only in forward direction.	
+ListIterator can traverse the elements in a collection in forward as well as the backwards direction.
+Add	Iterator is unable to add elements to a collection.	ListIteror can add elements to a collection.
+Modify	Iterator can not modify the elements in a collection.
+	ListIterator can modify the elements in a collection using set().
+Traverse	Iterator can traverse Map, List and Set.
+	ListIterator can traverse List objects only.
+Index	
+Iterator has no method to obtain an index of the element in a collection.	
+Using ListIterator, you can obtain an index of the element in a collection.
+
+*************************Difference Between ArrayList and LinkedList in Java
+ArrayList and LinkedList are the Collection classes, and both of them implements the List interface. The ArrayList class creates the list which is internally stored in a dynamic array that grows or shrinks in size as the elements are added or deleted from it. LinkedList  also creates the list which is internally stored in a Doubly Linked List. Both the classes are used to store the elements in the list, but the major difference between both the classes ArrayList and LinkedList is that ArrayList allows random access to the elements in the list as it operates on an index-based data structure. On the other hand, the LinkedList does not allow random access as it does not have indexes to access elements directly, it has to traverse the list to retrieve or access an element from the list.
+
+BASIS FOR COMPARISON	ARRAYLIST	LINKEDLIST
+Basic	ArrayList allows random access to the elements in the list.	LinkedList does not allow random access to the elements in the list.
+Data structure	The internal structure used for storing elements is the dynamic array.	The internal structure used to store elements is doubly link list.
+Extends	ArrayList extends AbstarctList class.	LinkedList extends AbstractSequentialList.
+Implements	AbstractList implements List interface.	LinkedList implements List, Deque, Queue.
+Access	Access to elements in the list is faster in ArrayList.	Access to elements in the list is slower in LinkedList.
+Manipulation	Manipulation to elements in the list is slower in ArrayList.	Manipulation to elements in the list is faster in LinkedList.
+Behaviour	ArraylList behaves as List as it implements list.	LinkedList behaves as List a well as the Queue as it implements List and Queue both.
+
+Key Differences Between ArrayList and LinkedList in Java
+The list implement by the ArrayList can be accessed randomly because ArrayList adopts the index-based data structure of the array. On the other hands, the list implemented by the LinkedList can’t be accessed randomly because for retrieving or accessing a particular element in the list you have to traverse the list.
+The internal data structure used by ArrayList to store the elements of the list is a dynamic array that can grow or shrink as the elements are added or deleted from the list. However, the internal data structure used by the LinkedList to store the elements in the list is doubly linked list.
+The ArrayList extends the AbstractList class which is also a Collection class whereas, the LinkedList class extends AbstractSequentialList class that is again a Collection class.
+ArrayList class implements List interface whereas, the LinkedList class implements List, Queue, and Deque interfaces.
+Accessing elements from the list implemented using ArrayList is faster as it has an index-based data structure. On the other hands, there is no index based structure in the list implement byLinkledList. Hence, an iterator is applied over the list to reach the element to be accessed which makes accessing slower in LinkedList.
+Manipulation is Manipulationin the list implemented using ArrayList because whenever an element is added or deleted from the list, the elements in the list are shifted to accommodate the change. On the other hand, manipulation is faster in the list implemented by LinkedList as it does not require shifting elements in the list on addition or deletion of the elements from the list.
+ArrayList acts like a list as it implements List interface whereas, the LinkedList act as list and queue as it implements List and Queue both.
+
+
+*************************hashset and hashmap difference in java
+
+HASHSET
+
+HashSet class implements the Set interface
+
+In HashSet we store objects(elements or values) e.g. If we have a HashSet of string elements then it could depict a set of HashSet elements: {“Hello”, “Hi”, “Bye”, “Run”}
+HashSet does not allow duplicate elements that means you can not store duplicate values in HashSet.
+HashSet permits to have a single null value.
+
+	HASHMAP
+	HashMap class implements the Map interface
+	HashMap is used for storing key & value pairs. In short it maintains the mapping of key & value (The HashMap class is roughly equivalent to Hashtable, except that it is unsynchronized and permits nulls.) This is how you could represent HashMap elements if it has integer key and value of String type: e.g. {1->”Hello”, 2->”Hi”, 3->”Bye”, 4->”Run”}
+	HashMap does not allow duplicate keys however it allows to have duplicate values.
+	HashMap permits single null key and any number of null values.
+	Similarities:
+1) Both HashMap and HashSet are not synchronized which means they are not suitable for thread-safe operations unitl unless synchronized explicitly. This is how you can synchronize them explicitly:
+HashSet:
+Set s = Collections.synchronizedSet(new HashSet(...));
+HashMap:
+Map m = Collections.synchronizedMap(new HashMap(...));
+	
+	2) Both of these classes do not guarantee that the order of their elements will remain constant over time.
+
+
+3) If you look at the source code of HashSet then you may find that it is backed up by a HashMap. So basically it internally uses a HashMap for all of its operations.
+
+4) They both provide constant time performance for basic operations such as adding, removing element etc.
+
+
+*************************Java Map Interface
+A map contains values on the basis of key, i.e. key and value pair. Each key and value pair is known as an entry. A Map contains unique keys.
+
+A Map is useful if you have to search, update or delete elements on the basis of a key.
+There are two interfaces for implementing Map in java: Map and SortedMap, and three classes: HashMap, LinkedHashMap, and TreeMap. The hierarchy of Java Map is given below:
+
+
+A Map doesn't allow duplicate keys, but you can have duplicate values. HashMap and LinkedHashMap allow null keys and values, but TreeMap doesn't allow any null key or value.
+
+A Map can't be traversed, so you need to convert it into Set using keySet() or entrySet() method.
+
+Class	Description
+HashMap	HashMap is the implementation of Map, but it doesn't maintain any order.
+LinkedHashMap	LinkedHashMap is the implementation of Map. It inherits HashMap class. It maintains insertion order.
+TreeMap	TreeMap is the implementation of Map and SortedMap. It maintains ascending ord
+
+*************************Android  Fragments and its Lifecycle
+To understand what a fragment is, we can think fragment is like a sub-activity. 
+A whole activity which we can see on our screen and if we only need to modify a small part, 
+how we can do that with any modification in activity? So, we need a fragment.
+
+Fragment provides us with 2 major things:
+
+Modularity
+Adaptability
+
+There are some points about fragments:
+
+A fragment has its layout and its behaviour with its lifecycle callbacks.
+You can add or remove fragments in the activity. Activity is running, which is in the resumed lifecycle state.
+You can combine multiple fragments in a single activity to build a multi-pane UI.
+A fragment can be reuse in multiple activities.
+A fragment life cycle is closely related to the lifecycle of its host activity which means when the activity is in the pause state,
+all the fragments available in the activity will also stop.
+Fragments added to the Android API in Android 3.0 which API version 11 to support flexible UI on large screens.
+
+The fragment has its lifecycle which runs under the activity lifecycle.
+
+onAttach() — This method called first, To know that our fragment has been attached to an activity. We are passing the Activity that will host our fragment.
+
+onCreate() —  This method called when a fragment instance initializes, just after the onAttach where fragment attaches to the host activity.
+
+onCreateView() —  The method called when it’s time for the fragment to draw its user interface for the first time. 
+To draw a UI for your fragment, you must return a View component from this method that is the root of your fragment’s layout. 
+You can return null if the fragment does not provide a UI.
+
+onActivityCreated() — This method called when Activity completes its onCreate() method
+
+onStart() — This method called when a fragment is visible.
+
+onResume() — This method called when a fragment is visible and allowing the user to interact with it. Fragment resumes only after activity resumes.
+
+onPause() — This method called when a fragment is not allowing the user to interact; the fragment will get change with other fragment or it gets removed from activity or fragment’s activity called a pause.
+
+onStop() — This method called when the fragment is no longer visible; the fragment will get change with other fragment or it gets removed from activity or fragment’s activity called stop.
+
+onDestroyView() —  This method called when the view and related resources created in onCreateView() are removed from the activity’s view hierarchy and destroyed.
+
+onDestroy() —  This method called when the fragment does its final clean up.
+
+onDetach() —  This method called when the fragment is detached from its host activity.
+
+*************************Activity and Activity lifecycle
+
+Android Activity Lifecycle is controlled by 7 methods of android.app.Activity class. The android Activity is the subclass of ContextThemeWrapper class.
+
+An activity is the single screen in android. It is like window or frame of Java.
+
+By the help of activity, you can place all your UI components or widgets in a single screen.
+
+The 7 lifecycle method of Activity describes how activity will behave at different states.
+
+Method	Description
+onCreate	called when activity is first created.
+onStart	called when activity is becoming visible to the user.
+onResume	called when activity will start interacting with the user.
+onPause	called when activity is not visible to the user.
+onStop	called when activity is no longer visible to the user.
+onRestart	called after your activity is stopped, prior to start.
+onDestroy	called before the activity is destroyed.
+
+
+*************************what exactly Activity.finish() method is doing?
+When calling finish() on an activity, the method onDestroy() is executed. This method can do things like:
+
+Dismiss any dialogs the activity was managing.
+Close any cursors the activity was managing.
+Close any open search dialog
+
+My 2 cents on @K_Anas answer. I performed a simple test on finish() method. Listed important callback methods in activity life cycle
+
+Calling finish() in onCreate(): onCreate() -> onDestroy()
+Calling finish() in onStart() : onCreate() -> onStart() -> onStop() -> onDestroy()
+Calling finish() in onResume(): onCreate() -> onStart() -> onResume() -> onPause() -> onStop() -> onDestroy()
+What I mean to say is that counterparts of the methods along with any methods in between are called when finish() is executed.
+
+eg:
+
+ onCreate() counter part is onDestroy()
+ onStart() counter part is onStop()
+ onPause() counter part is onResume()
+ 
+My study shows that finish() method actually places some destruction operations in the queue, but the Activity is not destroyed immediately.
+ The destruction is scheduled though.
+
+For example, if you place finish() in onActivityResult() callback, while onResume() has yet to run, 
+then first onResume() will be executed, and only after that onStop() and onDestroy() are called.
+
+
+*************************service-vs-thread-in-android
+Android has included in its documentation on when you should use Service vs Thread. Here is what it says
+
+If you need to perform work outside your main thread, but only while the user is interacting with your application, 
+then you should probably instead create a new thread and not a service. For example, 
+if you want to play some music, but only while your activity is running, 
+you might create a thread in onCreate(), start running it in onStart(), then stop it in onStop().
+ Also consider using AsyncTask or HandlerThread, instead of the traditional Thread class. 
+ See the Processes and Threading document for more information about threads.
+
+Remember that if you do use a service, it still runs in your application's main thread by default, so you should still 
+create a new thread within the service if it performs intensive or blocking operations.
+
+
+Another notable difference between these two approaches is that Thread will sleep if your device sleeps. Whereas, 
+Service can perform operation even if the device goes to sleep. Let's take for example playing music using both approaches.
+
+Thread Approach: the music will only play if your app is active or screen display is on.
+
+Service Approach: the music can still play even if you minimized your app or screen is off.
+
+
+A Service is meant to run your task independently of the Activity, it allows you to run any task in background. 
+This run on the main UI thread so when you want to perform any network or heavy load operation then you have to use the Thread there.
+
+Example : Suppose you want to take backup of your instant messages daily in the background then here you would use the Service.
+
+Threads is for run your task in its own thread instead of main UI thread. You would use when you want to do some heavy network 
+operation like sending bytes to the server continuously, and it is associated with the Android components. 
+When your component destroy who started this then you should have stop it also.
+
+Example : You are using the Thread in the Activity for some purpose, it is good practice to stop it when your activity destroy.
+
+
+
+**************************************How to unregister BroadcastReceiver
+
+onDestroy() is not guaranteed to be called. When you start Activity from Activty, onPause() and onStop() method called instead of onDestroy().
+
+onDestroy() calls when you hit back button or call finish() method.
+
+Hence, broadcast receiver should be registered in onRestart() or onResume(), and unregister receiver in onPause() or onStop().
+
+If you unregister receiver in onDestroy() method, it might cause a memory leak in App.
+
+lead to memory leak if we dont unregister broadcast rcve
+
+Since Android Oreo, implicit broadcast receivers won’t work when registered in the AndroidManifest.xml
+
+How to handle Implicit Receivers in Android Oreo?
+
+To use Implicit Receivers in your application, you need to define them programmatically in your code, using registerReceiver().
+
+Using registerReceiver() we can programmatically register and unregisterReceiver() during the lifecycle of the activity. This way implicit receivers would only be called when our activity/application is alive and not at other times.
+
+Besides registering receivers programmatically, we can use JobSchedulers too.
+
+
+Several Implicit Broadcasts are exempted and can be declared in the Manifest:
+
+Note: Beginning with Android Pie, The NETWORK_STATE_CHANGED_ACTION broadcast doesn’t receive information about the user’s location or 
+personally identifiable data.
+
+In the next section, we’ll be creating an application which implements Broadcast Receivers keeping the Android Oreo limitations. 
+
+
+
+**************************************Difference between Activity Context and Application Context
+They are both instances of Context, but the application instance is tied to the lifecycle of the application,
+ while the Activity instance is tied to the lifecycle of an Activity. Thus, they have access to different information about the application environment.
+
+If you read the docs at getApplicationContext it notes that you should only use this if you need a context whose lifecycle is separate 
+from the current context. This doesn't apply in either of your examples.
+
+The Activity context presumably has some information about the current activity that is necessary to complete those calls.
+ If you show the exact error message, might be able to point to what exactly it needs.
+
+But in general, use the activity context unless you have a good reason not to.
+
+
+Wrong use of Context can easily lead to memory leaks in an android application.
+
+If we go by name, it’s the context of the current state of the application(object). It lets newly-created objects understand what has been going on. 
+You can use the context to get the information regarding activity and application.
+
+And also, Context is like a handle to the system, it provides access to the resources, 
+databases and preferences, and etc. An Android app has activities. It’s like a handle to the environment your application is currently running in
+
+
+Context is almost everywhere in Android Development and it is the most important thing in the Android Development, so we must understand to use it correctly.
+
+Application Context
+It is an instance which is the singleton and can be accessed in an activity via getApplicationContext(). This context is tied to the lifecycle of an application. The application context can be used where you need a context whose lifecycle is separate from the current context or when you are passing a context beyond the scope of an activity.
+
+Example Use: If you have to create a singleton object for your application and that object needs a context, always pass the application context.
+
+If you pass the activity context here, it will lead to the memory leak as it will keep the reference to the activity and 
+activity will not be garbage collected.
+
+In case, when you have to initialize a library in an activity, always pass the application context, not the activity context.
+
+Activity Context
+This context is available in an activity. This context is tied to the lifecycle of an activity.
+ The activity context should be used when you are passing the context in the scope of an activity 
+ or you need the context whose lifecycle is attached to the current context.
+
+Example Use: If you have to create an object whose lifecycle is attached to an activity, you can use the activity context.
+
+getContext() in ContentProvider
+This context is the application context and can be used similar to the application context. This can be accessed via getContext() method.
+
+
+*************************Android Development Best Practices
+
+Use the recommended Android architecture.
+
+The principles presented in the MVP philosophy is by far the best I have come across.
+What is an MVP and why should we explore it?
+
+For starters, when you develop an Android application, you should prepare it to be run on a wide variety of devices and circumstances.
+
+What is MVP?
+MVP
+It is an architecture that provides code reusability and testability. By following this architecture it will be easy to update code in future. To work within a team we need to follow any architecture for code readability.
+
+
+Why MVP
+If we can write code easily in activities then why we need to follow any architecture, at a point of time it is good that your application is working fine but how to make changes in your code in future if needed, how you test if required. Implementing changes after a period of time seems to be a mess in your own written code in any application, how other or new team members implement changes.
+
+To work within a team, we need ease in code readability for every team members, updating codes with ease in future also needs to be handled efficiently, it can only be done by following some architecture.
+
+To overcome with all these issues we should follow MVP, as MVP has all the solution.
+
+MVP application is divided into three parts.
+
+Model
+View
+Presenter
+Let's understand these components in next page.
+
+Model
+It handles the data part of the application. It does not interact directly with the view. It provides data to Presenter, and presenter forwards data to the view and intake data from presenter which is provided by the view. Model is not even aware of view and vice versa.
+
+Model is divided into various parts, at center we have datamanager which is the single part of the model with which the presenter interacts, then datamanager on further interacts with other components of the model.
+
+
+View
+It handles the presentation of the layout. Its responsibility is to draw ui with data as per the instructions provided by Presenter. Activities, fragment, dialogs, custom views are the view part of the application.
+
+Each view has a presenter.
+
+Base of the view has atleast two parts as MvpView and Activity, among them MvpView is an interface and Activity is a class which implements MvpView. Base part of the view can further be divided into various parts as per the use cases.
+
+
+Presenter
+It is a gateway between model and view as they do not interact each other directly. Every data passes through this gateway. It updates the view by taking the data from the model and update the model with data provided by the view.
+
+Base of the presenter also have a minimum of two parts, among them first is MvpPresenter as interface and second is BasePresenter as class implementing this interface. It’s base part can also be divided into various parts as per the use case.
+
+
+Always maintain the code quality. Quality matters a lot. It’s not only about MVP/MVVM/MVC/etc., but also about each piece of code in each part of your app.
+Detecting and fixing memory leaks in android. Read this article to understand.
+
+Always include functional UI tests. Functional tests check the functionality of your app from the user’s point of view. They launch your app and test its functionality. Here you can use Android Instrumentation if your application is not going to interact with other applications, as it runs only with your application. If there is an interaction with other apps use UIAutomator for testing this functionality.
+
+As I said earlier, Always write code for better performance.
+
+Beware of little expenses. A small leak will sink a great ship. — Benjamin Franklin
+Use Proguard in your release version. This will remove all your unused code, which will reduce APK size.
+
+Use debugging tools. I highly recommend to use Android Debug Database . This library will be your best friend. Android Debug Database is a powerful library for debugging databases and shared preferences in Android applications. It’s a very simple tool for viewing databases and shared preferences directly in your browser.
+
+
+Use strings.xml. Adding text as string resources is always useful in the long-run, especially when support for new languages needs to be added.
+Create separate layouts for UI elements that will be re-used. Then use the include tag in xml. Another handy tag is the <merge/> tag. It acts as a pseudo parent, and helps get rid of an unneeded root ViewGroup. Read here about it.
+Place launcher icons in mipmap-folders. When building separate APKs for different densities, drawable folders for other densities get stripped. This will make the icons appear blurry on devices that use launcher icons of higher density. Since mipmap folders do not get stripped, it’s always best to use them for including the launcher icons.
+Use shapes and selectors instead of images as much as possible. This further reduces APK size.
+Avoid deep levels in layouts. A deep hierarchy of views makes your UI slow, not to mention making it harder to manage your layouts. Deep hierarchies can mostly be avoided by using the correct ViewGroup. Use Constraint Layout.
+Use a HTTP library like Fast Android Networking, Volley, or Retrofit, depending on your use case.
+Use the Parcelable class instead of Serializable when passing data in Intents or Bundles. Serialization of an object that implements the Parcelable interface is much faster than using Java’s default serialization. A class that implements the Serializable interface is marked as serializable, and Java serializes it using reflection (which makes it slow). When using the Parcelable interface, the whole object doesn’t get serialized automatically. Rather, you can selectively add data from the object to a Parcel using which the object is later deserialized.
+Perform file operations off the UI thread. File operations should always be performed on a worker thread, typically by using an AsyncTask/Loader. They take time, and if done on the UI thread can make the interface feel sluggish. In situations where they block the UI thread for 5 seconds, an Application Not Responding warning will be triggered and shown to the user.
+Understand Bitmaps. As it takes a huge amount of memory. can lead to OOM easily. Users love content! Especially when the content is well formatted and looks nice. Images, for instance, are extremely nice content, mainly due to their property of conveying a thousand words per image. They also consume a lot of memory. A lot of memory! — Learn From Here.
+Understand Context. Learn from here.
+Use styles to avoid duplicate attributes in layout XMLs.
+Use Fragment when it is required.
+Learn RxJava. RxJava is a Java VM implementation of Reactive Extensions. It has become the single most important skill for Android development.
+
+
+*************************Difference between concat() and + operator in Java
+
+Definition	*************************A concat() method is method to combine two strings .	+ operator used to concatenate any number of strings.
+Number of arguments	*************************In concat() method, takes only one argument of string and concatenate it with another string.	In + operatortakes any number of arguments and combines all strings.
+Type of arguments	*************************concat() method takes arguments of string type only.	+ operator takes any type of argument and converts it to string type and then combine them.
+Creates new string*************************	concat() takes concatenates two strings and return new string object only string length is greater than 0, otherwise it returns same object..	+ operatorcreates a new string object every time irrespective of length of string.
+NullPointer Exception*************************	In concat() method raises NullPointer Exception when string is concatenated with null .	+ operator concatenates string with without any error.
+Performance	*************************concat() method is better than + operator because it creates a new object only when the string length is greater than zero(0), so it uses less amount of memory.	+ operator always a creates a new string irrespective of length of string therefore it takes more memory.
+
+*************************Started /Bound 
+
+A service is a component that runs in the background to perform long-running operations without needing to interact with the user. For example, a service might play music in the background while the user is in a different application, or it might fetch data over the network without blocking user interaction with an activity. A service can essentially take two states:
+
+Started : A service is started when an application component, such as an activity, starts it by calling startService(). Once started, a service can run in the background indefinitely, even if the component that started it is destroyed.
+
+Bound : A service is bound when an application component binds to it by calling bindService(). A bound service offers a client-server interface that allows components to interact with the service, send requests, get results, and even do so across processes with interprocess communication (IPC).
+
+
+*************************What is Java Serialization?
+
+Serialization is a mechanism to convert an object into stream of bytes so that it can be written into a file, transported through a network or stored into database. De-serialization is just a vice versa. In simple words serialization is converting an object to stream of bytes and de-serialization is rebuilding the object from stream of bytes. Java Serialiation API provides the features to perform seralization & de-serialization. A class must implement java.io.Serializable interface to be eligible for serialization.
+
+Lets take an example to understand the concepts better:
+
+*************************Difference between Parcelable and Serializable in android
+
+Serializable
+Serializable is a markable interface or we can call as an empty interface. It doesn’t have any pre-implemented methods. Serializable is going to convert an object to byte stream. So the user can pass the data between one activity to another activity. The main advantage of serializable is the creation and passing data is very easy but it is a slow process compare to parcelable.
+
+A simple example of serializable as shown below –
+
+import java.io.Serializable;
+class serializableObject implements Serializable {
+   String name;
+   public serializableObject(String name) {
+      this.name = name;
+   }
+   public String getName() {
+      return name;
+   }
+}
+
+Parcelable
+Parcel able is faster than serializable. Parcel able is going to convert object to byte stream and pass the data between two activities. Writing parcel able code is little bit complex compare to serialization. It doesn’t create more temp objects while passing the data between two activities.
+
+A simple example of Parcel able as shown below –
+
+
+What is Serializable?
+Serializable is a standard Java interface. It is not a part of the Android SDK. It’s simplicity is it’s beauty. Just by implementing this interface your POJO will be ready to jump from one Activity to another. In the following code snippet you can see how simple it is to use this interface.
+
+Because Serializable is a marker interface, we don’t have to implement tons of extra methods. When we ‘mark’ our POJO with it, Java will try it’s best to serialize it.
+
+
+The first ‘team’ stands behind the idea that Parcelable is way faster and better than Serializable. Of course, there is data behind this statement.
+
+
+The results from the tests conducted by Philippe Breault show that Parcelable is more than 10x faster than Serializable. Some other Google engineers stand behind this statement as well.
+
+
+Because with Parcelable we are actually writing custom code
+
+Serializable approach, we rely on the automatic serialization process of Java. The process is apparently not custom at all and creates lots of garbage! Thus, the worse results.
+
+Conclusion
+
+Parcelable is faster than Serializable interface
+Parcelable interface takes more time to implement compared to Serializable interface
+Serializable interface is easier to implement
+Serializable interface creates a lot of temporary objects and causes quite a bit of garbage collection
+Parcelable array can be passed via Intent in android
+
+
+Serializable is a standard Java interface. You simply mark a class Serializable by implementing the interface, and Java will automatically serialize it in certain situations.
+
+Parcelable is an Android specific interface where you implement the serialization yourself. It was created to be far more efficient that Serializable, and to get around some problems with the default Java serialization scheme.
+
+I believe that Binder and AIDL work with Parcelable objects.
+
+However, you can use Serializable objects in Intents.
+
+If you want to be a good citizen, take the extra time to implement Parcelable since it will perform 10 times faster and use less resources.
+
+However, in most cases, the slowness of Serializable won’t be noticeable. Feel free to use it but remember that serialization is an expensive operation so keep it to a minimum.
+
+If you are trying to pass a list with thousands of serialized objects, it is possible that the whole process will take more than a second. It can make transitions or rotation from portrait to lanscape feel very sluggish.
+
+
+@Override
+public int describeContents() {
+    return 0;
+}
+
+@Override
+public void writeToParcel(Parcel dest, int flags) {
+    dest.writeString(this.name);
+
+}
+
+public static final Parcelable.Creator<TestModel> CREATOR = new Parcelable.Creator<TestModel>() {
+    @Override
+    public TestModel createFromParcel(Parcel source) {
+        return new TestModel(source);
+    }
+
+    @Override
+    public TestModel[] newArray(int size) {
+        return new TestModel[size];
+    }
+};
+}
+
+The Serializable interface can be used the same way as the Parcelable one, resulting in (not much) better performances. Just overwrite those two methods to handle manual marshalling and unmarshalling process:
+
+
+private void writeObject(java.io.ObjectOutputStream out)
+    throws IOException
+private void readObject(java.io.ObjectInputStream in)
+    throws IOException, ClassNotFoundException
+	
+*************************
+
+*************************service-vs-thread-in-android
+Android has included in its documentation on when you should use Service vs Thread. Here is what it says:
+
+If you need to perform work outside your main thread, but only while the user is interacting with your application, then you should probably instead create a new thread and not a service. For example, if you want to play some music, but only while your activity is running, you might create a thread in onCreate(), start running it in onStart(), then stop it in onStop(). Also consider using AsyncTask or HandlerThread, instead of the traditional Thread class. See the Processes and Threading document for more information about threads.
+
+Remember that if you do use a service, it still runs in your application's main thread by default, so you should still create a new thread within the service if it performs intensive or blocking operations.
+
+Another notable difference between these two approaches is that Thread will sleep if your device sleeps. Whereas, Service can perform operation even if the device goes to sleep. Let's take for example playing music using both approaches.
+
+Thread Approach: the music will only play if your app is active or screen display is on.
+
+Service Approach: the music can still play even if you minimized your app or screen is off.
+
+A Service is meant to run your task independently of the Activity, it allows you to run any task in background. This run on the main UI thread so when you want to perform any network or heavy load operation then you have to use the Thread there.
+
+Example : Suppose you want to take backup of your instant messages daily in the background then here you would use the Service.
+
+Threads is for run your task in its own thread instead of main UI thread. You would use when you want to do some heavy network operation like sending bytes to the server continuously, and it is associated with the Android components. When your component destroy who started this then you should have stop it also.
+
+Example : You are using the Thread in the Activity for some purpose, it is good practice to stop it when your activity destroy.
+
+
+This is the principle i largely follow
+
+Use a Thread when
+
+app is required to be visible when the operation occurs.
+background operation is relatively short running (less than a minute or two)
+the activity/screen/app is highly coupled with the background operation, the user usually 'waits' for this operation to finish before doing anything else in the app. Using a thread in these cases leads to cleaner, more readable & maintainable code. That being said its possible to use a Service( or IntentService).
+Use a Service when
+
+app could be invisible when the operation occurs (Features like Foreground service could help with operations being interrupted)
+User is not required to 'wait' for the operation to finish to do other things in the app.
+app is visible and the operation is independent of the app/screen context.
+
+A service is simply a component that can run in the background even when the user is not interacting with your application. Thus, you should create a service only if that is what you need.
+
+If you need to perform work outside your main thread, but only while the user is interacting with your application, then you should probably instead create a new thread and not a service.
+
+For example, if you want to play some music, but only while your activity is running, you might create a thread in onCreate(), start running it in onStart(), then stop it in onStop().
+
+Remember that if you do use a service, it still runs in your application's main thread by default, so you should still create a new thread within the service if it performs intensive or blocking operations.
+
+
+
+*************************Difference between Service and Threaads	
+Thread : is a O.S level feature that allow you to do some operation in the background.
+
+Though conceptually both looks similar there are some crucial differentiation.
+
+1.Service - if it is destroyed while performing its job, in the middle by Android due to low memory scenario. Then android will make sure that it will restart your service, if you have returned START_STICKY or START_REDELIVER_INTENT from onStartCommand().
+
+2.Thread - if it is destroyed by android in middle due to low memory, then android will not guarantee to restart it again. That means user lost his half work.
+
+3.Service - is a component of android, so it has priority levels to be considered while destroying an application due to low memory.
+
+4. Thread - is not a component of android, so android will not take thread priority into consideration while killing an application due to low memory.
+
+I will try to explain this 3rd point.
+
+Lets, say you have a requirement of connecting to internet from your activity. You can do it by using a service(with thread) or directly by creating a thread in activity. Consider the second scenario where you are connecting to internet in a thread. Then
+
+i. What will happen if user closes the activity, while still thread is running in the background. Will that thread continue to run in back ground ? Answer is you can't really predict.
+
+ii. Assume that in continuation for above scenario, even after killing activity your thread continued to do its intended operation. Then there is a low memory situation arises in your phone. Then this application will be the first susceptible app to be killed as there is no priority for this application.
+
+So bottom line is: If you want to do some heavy background functionality then it is always better to have a service with thread. If you feel that that background functionality to be alive as long as your activity is alive, then go for activity with thread or activity with async task.
+
+
+
+*************************Difference between Android Service,Thread,IntentService and AsyncTask
+Service   -- 
+
+When to use ?
+Task with no UI, but shouldn't be too long. Use threads within service for long tasks.
+
+
+Thread --
+- Long task in general.
+
+- For tasks in parallel use Multiple threads (traditional mechanisms)
+
+IntentService
+
+- Long task usually with no communication to main thread.
+(Update)- If communication is required, can use main thread handler or broadcast intents
+
+- When callbacks are needed (Intent triggered tasks). 
+
+- When callbacks are needed (Intent triggered tasks). 
+
+
+---AsyncTask
+
+- Small task having to communicate with main thread.
+
+- For tasks in parallel use multiple instances OR Executor 
+ 
+
+Limitations /
+Drawbacks
+May block main thread
+- Manual thread management
+
+- Code may become difficult to read
+- Cannot run tasks in parallel.
+
+- Multiple intents are queued on the same worker thread.
+- one instance can only be executed once (hence cannot run in a loop) 
+
+- Must be created and executed from the Main thread
+
+
+
+*************************Android architecture (framework),
+To answer this question, let me first break the term “Android Framework”.
+
+Android is an open source operating system developed and being maintained by Google.
+A Framework is the set of API’s that let developers to write software easily and quickly.
+In short, you can say that Android Framework is the stack of code that makes up the OS which includes native libraries which may or may not be accessible to the developer. It includes tools to design UI, work with databases, handle user interaction, etc.
+
+
+8***********************Android System Architecture
+Android is make up of 5 imporatnt layer
+---------Linux Kernel
+  This is Running on top of the kernel in Android software stack (architecture/framework) , Android includes various C/C++ core libraries such as libc and SSL, as well as the following are :
+  
+the work of Linux Kernel take wrk from device drives like keyborad , bluetooth ets
+also handle device Memory Management:
+Memory Management:
+It efficiently handles the memory management thereby providing the freedom to develop our apps.
+Security:
+The Linux kernel handles the security between the application and the system.
+Process Management:
+It manages the process well, allocates resources to processes whenever they need them.
+Network Stack:
+It effectively handles the network communication.
+
+Driver Model:
+It ensures that the application works. Hardware manufacturers can build their drivers into the Linux build
+
+It is heart of android architecture that existes at root of android architecture. linux Kernel is responsible for device drivers,
+take work from device drives .
+
+**********Libraries:
+Running on the top of the kernel,thrie are NAtive libraries such as Web kit,open Gl , Freetype,sqlite,Media ,c ,runtime libraries etc.
+Each libraries has thrie own responsibility.
+Open GL(graphics library):
+This cross-language, cross-platform application program interface (API) is used to produce 2D and 3D computer graphics.
+
+WebKit:
+This open source web browser engine provides all the functionality to display web content and to simplify page loading.
+
+Media frameworks:
+These libraries allow you to play and record audio and video.
+
+Secure Socket Layer (SSL):
+These libraries are there for Internet security.
+
+on the top LK their are native libraries such as Webkit , freetype, sqlite ,media  libraries etc.
+
+the webkit library is responsible for brower support.
+sqlite is for Database. freetype is for font support, media is for payling auto/video. 
+
+********Android Runtime:
+It is the third section of the architecture. It provides one of the key components which is called Dalvik Virtual Machine. It acts like Java Virtual Machine which is designed specially for Android. Android uses it’s own custom VM designed to ensure that multiple instances run efficiently on a single device.
+
+The Delvik VM uses the device’s underlying Linux kernel to handle low-level functionality,including security,
+threading and memory management.
+
+In android runtime .there are core libraries and DVM wgich is responsible to run android application.DVM
+is like JVM but its only for mobile devicces.it consumens less memory and provide fast performance.
+
+**********android framework.
+On the top of antive libraries and android runtime. there is android framework . android framework includes ANdroid APIs such as UI,
+telephony , resource,location ,content providers and package managers . it provides a lot of class and interface for android application development.
+
+********Application
+Android applications can be found at the topmost layer. At application layer we write our application to be installed on this layer only. Examples of applications are Games, Messages, Contacts etc.
+
+all inbuilt application such as home,contatc, settings games, 
+custom app fb , phornpay
+android SDK,
+ Android development starts with the Android SDK (Software Development Kit). While there are many different programming languages and a host of IDEs (Integrated Development Environments) you can use to create an app, the SDK is a constant.
+ SDK provides a selection of tools required to build Android apps or to ensure the process goes as smoothly as possible. Whether you end up creating an app with Java, Kotlin or C#, you need the SDK to get it to run on an Android device and access unique features of the OS. You’ll also be able to use an emulator to test apps you’ve built, monitor your device, and do a host of other things. These days, the Android SDK also comes bundled with Android Studio, the integrated development environment where the work gets done and many of the tools are now best accessed or managed. You can download the SDK independently however if that is your preference.
+ 
+ Anatomy of the Android SDK
+The Android SDK can be broken down into several components. These include:
+
+Platform-tools
+Build-tools
+SDK-tools
+The Android Debug Bridge (ADB)
+Android Emulator.
+
+Android | build.gradle
+Gradle is a build system (open source) which is used to automate building, testing, deployment etc. “Build.gradle” are scripts where one can automate the tasks. For example, the simple task to copy some files from one directory to another can be performed by Gradle build script before the actual build process happens.
+
+Why is Gradle needed?
+
+Every Android project needs a gradle for generating an apk from the .java and .xml files in the project. Simply put, a gradle takes all the source files (java and XML) and apply appropriate tools, e.g., converts the java files into dex files and compresses all of them into a single file known as apk that is actually used.
+
+There are two types of build.gradle scripts
+
+Top-level build.gradle
+Module-level build.gradle
+Top-level build.gradle
+
+It is located in the root project directory and its main function is to define the build configurations that will be applied to all the modules in the project. It is implemented as:
+
+filter_none
+brightness_4
+// Top-level build file where you can add configuration 
+// options common to all sub-projects/modules. 
+  
+buildscript 
+{ 
+  
+    repositories 
+    { 
+        google() 
+            jcenter() 
+    } 
+    dependencies 
+    { 
+        classpath 'com.android.tools.build:gradle:3.0.1'
+  
+        // Do not place the application dependencies here;  
+        // they belong to individual module build.gradle files 
+    } 
+} 
+  
+allprojects 
+{ 
+    repositories 
+    { 
+        google() 
+            jcenter() 
+    } 
+} 
+  
+task clean(type 
+           : Delete) 
+{ 
+    delete rootProject.buildDir 
+} 
+The top-level build.gradle supports various build configurations like:
+
+buildcript: This block is used to configure the repositories and dependencies for Gradle.
+[NOTE: Don’t include dependencies here.(those will be included in the module-level build.gradle) ]
+dependencies: This block in buildscript is used to configure dependencies that the Gradle needs to build during the project.
+filter_none
+brightness_4
+classpath 'com.android.tools.build:gradle:3.0.1'
+This line adds the plugins as a classpath dependency for gradle 3.0.1.
+
+allprojects: This is the block where one can configure the third-party plugins or libraries. For freshly created projects android studio includes JCenter and Google’s maven repository by default.
+task clean(type:Delete): This block is used to delete the directory everytime the project is run. This way the projects keep clean when someone modify some config files like, during settings.gradle which require a complete clean.
+Module-level build.gradle
+
+Located in the project/module directory of the project this Gradle script is where all the dependencies are defined and where the sdk versions are declared. This script has many functions in the project which includes additional build types and override settings in the main/app manifest or top-level build.gradle file. It is implemented as:
+
+filter_none
+brightness_4
+// The first line in this file indicates 
+// the Android plugin is applied for Gradle to 
+// this build 
+  
+apply plugin : 'com.android.application'
+  
+android 
+{ 
+    compileSdkVersion 26 defaultConfig 
+    { 
+        applicationId "example.mehakmeet.geeksforgeeks"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    } 
+    buildTypes 
+    { 
+        release 
+        { 
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        } 
+    } 
+} 
+  
+dependencies 
+{ 
+    implementation fileTree(include 
+                            : [ '*.jar' ], dir 
+                            : 'libs') 
+        implementation 'com.android.support:appcompat-v7:26.1.0'
+} 
+The Module-level build.gradle supports various build configurations like:
+
+android: This block is used for configuring the specific android build options.
+compileSdkVersion – This is used to define the API level of the app and the app can use the features of this and lower level.
+defaultConfig:
+applicationId– This is used for identifying unique id for publishing of the app.
+minSdkVersion– This defines the minimum API level required to run the application.
+targetSdkVersion– This defines the API level used to test the app.
+versionCode– This defines the version code of the app. Everytime an update needs to be of the app, the version code needs to be increased by 1 or more.
+versionName– This defines the version name for the app. this could be increased by any much while creating an update.
+buildTypes(release):
+minifyEnabled– this will enable code shrinking for release build.
+proguardFiles– this will specify the progaurd settings file.
+dependencies– This specify the dependencies that are needed to build the project.
+Both the top-level and module-level build.gradle files are the main script files for automating the tasks in an android project and are used by the Gradle for generating the APK from the source files.
+
+Build Types
+Build types define certain properties that Gradle uses when building and packaging your app, and are typically configured for different stages of your development lifecycle. For example, the debug build type enables debug options and signs the APK with the debug key, while the release build type may shrink, obfuscate, and sign your APK with a release key for distribution. You must define at least one build type in order to build your app—Android Studio creates the debug and release build types by default. To start customizing packaging settings for your app, learn how to Configure Build Types.
+Product Flavors
+Product flavors represent different versions of your app that you may release to users, such as free and paid versions of your app. You can customize product flavors to use different code and resources, while sharing and reusing the parts that are common to all versions of your app. Product flavors are optional and you must create them manually. To start creating different versions of your app, learn how to Configure Product Flavors.
+Build Variants
+A build variant is a cross product of a build type and product flavor, and is the configuration Gradle uses to build your app. Using build variants, you can build the debug version of your product flavors during development, or signed release versions of your product flavors for distribution. Although you do not configure build variants directly, you do configure the build types and product flavors that form them. Creating additional build types or product flavors also creates additional build variants. To learn how to create and manage build variants, read the Configure Build Variants overview.
+Manifest Entries
+You can specify values for some properties of the manifest file in the build variant configuration. These build values override the existing values in the manifest file. This is useful if you want to generate multiple APKs for your modules where each of the apk files has a different application name, minimum SDK version, or target SDK version. When multiple manifests are present, Gradle merges manifest settings.
+Dependencies
+The build system manages project dependencies from your local filesystem and from remote repositories. This prevents you from having to manually search, download, and copy binary packages of your dependencies into your project directory. To find out more, see Add Build Dependencies.
+Signing
+The build system enables you to specify signing settings in the build configuration, and it can automatically sign your APKs during the build process. The build system signs the debug version with a default key and certificate using known credentials to avoid a password prompt at build time. The build system does not sign the release version unless you explicitly define a signing configuration for this build. If you do not have a release key, you can generate one as described in Sign Your App.
+ProGuard
+The build system enables you to specify a different ProGuard rules file for each build variant. The build system can run ProGuard to shrink and obfuscate your classes during the build process.
+Multiple APK Support
+The build system enables you to automatically build different APKs that each contain only the code and resources needed for a specific screen density or Application Binary Interface (ABI). For more information see Build multiple APKs.
+
+java,
+
+SQLite,
+Android SQLite is a very lightweight database which comes with Android OS. Android SQLite combines a clean SQL interface with a very small memory footprint and decent speed. For Android, SQLite is “baked into” the Android runtime, so every Android application can create its own SQLite databases
+SQLite is a typical relational database, containing tables (which consists of rows and columns), indexes etc. We can create our own tables to hold the data accordingly. This structure is referred to as a schema
+
+SQLiteOpenHelper is designed to get rid of two very common problems.
+
+When the application runs the first time – At this point, we do not yet have a database. So we will have to create the tables, indexes, starter data, and so on.
+When the application is upgraded to a newer schema – Our database will still be on the old schema from the older edition of the app. We will have option to alter the database schema to match the needs of the rest of the app.
+
+DAta Types
+INTEGER	Any number which is no floating point number
+REAL	Floating-point numbers (8-Byte IEEE 754 - i.e. double precision)
+TEXT	Any String and also single characters (UTF-8, UTF-16BE or UTF-16LE)
+BLOB	A binary blob of data
+
+Why SQLite in the first place?
+Of course there is a reason why SQLite is so dominant in the embedded and also the mobile world. The main reasons are
+
+Low memory consumption
+Ease of use
+Free availability
+
+SQLite is not like any other database
+Though SQLite offers quite an impressive feature set given its size, it differs in many aspects from a conventional database system:
+
+SQLite is serverless
+SQLite stores data in one database file
+SQLite offers only a few data types
+SQLite uses manifest typing instead of static types
+SQLite has no fixed column length
+SQLite uses cross-platform database files
+SQLite doesn't use static typing
+
+what is joins? in sqlite
+
+Image result for what is joins? in sqlite
+SQLite JOINS are used to retrieve data from multiple tables. A SQLite JOIN is performed whenever two or more tables are joined in a SQL statement. There are different types of SQLite joins: INNER JOIN (or sometimes called simple join)
+
+SQLite JOINS are used to retrieve data from multiple tables. A SQLite JOIN is performed whenever two or more tables are joined in a SQL statement.
+
+There are different types of SQLite joins:
+
+INNER JOIN (or sometimes called simple join)
+LEFT OUTER JOIN (or sometimes called LEFT JOIN)
+CROSS JOIN
+TIP: The RIGHT OUTER JOIN and FULL OUTER JOIN are not supported in SQLite.
+
+INNER JOIN (Simple Join)
+Chances are, you've already written a statement that uses a SQLite INNER JOIN. It is the most common type of join. SQLite INNER JOINS return all rows from multiple tables where the join condition is met.
+
+LEFT OUTER JOIN
+Another type of join is called a SQLite LEFT OUTER JOIN. This type of join returns all rows from the LEFT-hand table specified in the ON condition and only those rows from the other table where the joined fields are equal (join condition is met).
+
+Syntax
+The syntax for the SQLite LEFT OUTER JOIN is:
+
+SELECT columns
+FROM table1
+LEFT [OUTER] JOIN table2
+ON table1.column = table2.column
+
+
+CROSS JOIN
+
+: Unlike an INNER or OUTER join, a CROSS JOIN has no condition to join the 2 tables.
+
+In this visual diagram, the SQLite CROSS JOIN returns every row in table1 matched with every row in table2.
+
+
+
+
+JSON,
+
+JSON stands for JavaScript Object Notation.It is an independent data exchange format and is the best alternative for XML. This chapter explains how to parse the JSON file and extract necessary information from it.
+
+JSON (Javascript Object Notation) is a programming language . It is minimal, textual, and a subset of JavaScript. It is an alternative to XML.
+
+Android provides support to parse the JSON object and array.
+
+Advantage of JSON over XML
+1) JSON is faster and easier than xml for AJAX applications.
+
+2) Unlike XML, it is shorter and quicker to read and write.
+
+3) It uses array.
+
+json object
+A JSON object contains key/value pairs like map. The keys are strings and the values are the JSON types. Keys and values are separated by comma. The { (curly brace) represents the json object.
+
+{  
+    "employee": {  
+        "name":       "sachin",   
+        "salary":      56000,   
+        "married":    true  
+    }  
+}  
+
+json array
+The [ (square bracket) represents the json array.
+
+["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]  
+Let's take another example of json array.
+
+{ "Employee" :  
+    [  
+     {"id":"101","name":"Sonoo Jaiswal","salary":"50000"},  
+     {"id":"102","name":"Vimal Jaiswal","salary":"60000"}  
+    ]   
+}  
+
+Mobile Development,
+Web service,
+Web services is a standardized way or medium to propagate communication between the client and server applications on the World Wide Web. This course will give a detailed insight into various components of web services like SOAP,WSDL, REST, and how they operate.
+Web services provide a common platform that allows multiple applications built on various programming languages to have the ability to communicate with each other
+SOAP:
+SOAP is known as the Simple Object Access Protocol.
+
+SOAP was developed as an intermediate language so that applications built on various programming languages could talk quickly to each other and avoid the extreme development effort.
+
+WSDL:
+WSDL is known as the Web Services Description Language(WSDL).
+
+WSDL is an XML-based file which tells the client application what the web service does and gives all the information required to connect to the web service.
+
+REST:
+REST stands for REpresentational State Transfer.
+
+REST is used to build Web services that are lightweight, maintainable, and scalable.
+
+How to Secure an Android App
+Introduction
+The Android operating system has lots of built-in security features, such as application sandboxing, protection against buffer and integer overflow attacks, and segregated memory areas for program instructions and data. As a result, simple Android apps that don't perform any file system or networking operations can often be considered secure by default.
+
+If you are developing a more complex app, however, it is your responsibility to make it secure and protect the privacy of your users. In this article, I'm going to list some of the best practices you can follow to build a secure Android app that doesn't leak data or permissions, and is, in general, less vulnerable to malicious apps that might be installed on the user's device.
+1. Use Internal Storage for Sensitive Data
+	
+File myFile = new File(getFilesDir(), "myfile.dat");
+
+2.Encrypt Data on External Storage
+The internal storage capacity of an Android device is often limited. Therefore, at times, you might have no choice but to store sensitive data on external storage media, such as a removable SD card.
+
+Because data on external storage media can be directly accessed by both users and other apps on the device, it is important that you store it in an encrypted format. One of the most popular encryption algorithms used by developers today is AES, short for Advanced Encryption Standard, with a key size of 256 bits.
+
+Writing code to encrypt and decrypt your app's data using the javax.crypto package, which is included in the Android SDK, can be confusing. Therefore, most developers prefer using third party libraries, such as Facebook's Conceal library, which are usually much easier to work with.
+
+3.Use Intents for IPC
+
+4. Use HTTPS
+All communications between your app and your servers must be over an HTTPS connection, preferably using the HttpsURLConnection class. If you think using HTTP for data that is not confidential is fine, think again.
+
+5. Use GCM Instead of SMS
+
+6. Avoid Asking for Personal Data
+
+7. Validate User Input
+
+8. Use ProGuard Before Publishing
+
+9.Restrict google API key access
+
+10.Use access token instead(Encypt it on desk)   Never ever store Password and private keys in shared preference.
+
+11.Watch what you print in LogCat
+
+12- Keep your dependencies up to date
+13- Protect your Service and content provider with Permission
+
+14- Avoid Asking for Personal Data
+16- Use as little permissions as possible
+
+15 -Don’t process any payments on a rooted device.
+Many apps have an in-app payment or making critical tasks never do this kind of tasks on a rooted device. Automatically disable these features on a rooted device. Because the rooted device can change your code at runtime and alter the behavior of it.
+You can detect rooted device using the code is this StackOverflow answer. For more details on that topic check this article.
+
+
+
+
+design pattern
+UI development,
+Software Development,
+Mobile App Design,
+Multithreding,   https://www.toptal.com/android/android-threading-all-you-need-to-know  https://www.geeksforgeeks.org/multithreading-in-java/ Good EG
+Androdi studio,
+Soap,
+volley,
+Retrofit,
+Mysql,
+Linux Kernal,
+REST services
+SVN
+Firebase android
+best practies,
+android design pattern
+push notificaton
+Rest API    -- impt https://www.youtube.com/watch?v=qVTAB8Z2VmA 
+
+dRuTGkjsbMU:APA91bGYD9isi9voK7KAEOoIgaaJgzycNCf_4kzTVWLGjJ0z07c7FxaH_xYpUvHK-Mnf3pUmyPJQgrn5aXqVlxw_8PiID2MvdElFwLQq0ATV--jngJOpNzSPfI7eBJBe11xxuBPS8Eme
+
+android upload multiple images to server
+fragment to lifecycle
+
+step 1.to send data from fragment to activity
+
+Intent intent = new Intent(getActivity().getBaseContext(),
+                        TargetActivity.class);
+                intent.putExtra("message", message);
+                getActivity().startActivity(intent);
+step 2.to receive this data in Activity:
+
+Intent intent = getIntent();
+String message = intent.getStringExtra("message");
+step 3. to send data from activity to another activity follow normal approach
+
+Intent intent = new Intent(MainActivity.this,
+                        TargetActivity.class);
+                intent.putExtra("message", message);
+                startActivity(intent);
+step 4 to receive this data in activity
+
+     Intent intent = getIntent();
+  String message = intent.getStringExtra("message");
+Step 5. From Activity you can send data to Fragment with intent as:
+
+Bundle bundle=new Bundle();
+bundle.putString("message", "From Activity");
+  //set Fragmentclass Arguments
+Fragmentclass fragobj=new Fragmentclass();
+fragobj.setArguments(bundle);
+and to receive in fragment in Fragment onCreateView method:
+
+@Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    Bundle savedInstanceState) {
+          String strtext=getArguments().getString("message");
+
+    return inflater.inflate(R.layout.fragment, container, false);
+    }
+
+Need Of Fragments In Android:
+Before the introduction of Fragment’s we can only show a single Activity on the screen at one given point of time so we were not able to divide the screen and control different parts separately. With the help of Fragment’s we can divide the screens in different parts and controls different parts separately.
+
+By using Fragments we can comprise multiple Fragments in a single Activity. Fragments have their own events, layouts and complete life cycle. It provide flexibility and also removed the limitation of single Activity on the screen at a time.
+
+In Android, Fragment is a part of an activity which enable more modular activity design. It will not be wrong if we say a fragment is a kind of sub-activity. It represents a behaviour or a portion of user interface in an Activity. We can combine multiple Fragments in Single Activity to build a multi panel UI and reuse a Fragment in multiple Activities. We always need to embed Fragment in an activity and the fragment lifecycle is directly affected by the host activity’s lifecycle.
+
+Implementation of Fragment In Android Require Honeycomb (3.0) or Later:
+Fragments were added in in Honeycomb version of Android i.e  API version 11. There are some primary classes related to Fragment’s are:
+
+1. FragmentActivity: The base class for all activities using compatibility based Fragment (and loader) features.
+
+2. Fragment: The base class for all Fragment definitions
+
+3. FragmentManager: The class for interacting with Fragment objects inside an activity
+
+4. FragmentTransaction: The class for performing an atomic set of Fragment operations such as Replace or Add a Fragment.
+
+
+Fragment Lifecycle Tutorial With Example In Android Studio
+In Android, Fragment is a part of an activity which enable more modular activity design. It will not be wrong if we say a fragment is a kind of sub-activity. It represents a behavior or a portion of user interface in an Activity. We can combine multiple Fragments in single Activity to build a multi pane UI and reuse a Fragment in multiple Activities. A fragment must always be embedded in an activity and the fragment’s life-cycle is directly affected by the host activity’s life-cycle.
+
+Recommended read? Activity Life Cycle In Android
+
+In Android, Fragments have their own life cycle very similar to an Activity but it has extra events that are particular to the Fragment’s view hierarchy, state and attachment to its activity.
+
+Here is the list of methods which you can to override in your Fragment class −
+
+1.  onAttach(): The fragment instance is associated with an activity instance.This method is called first, even before onCreate() method. This method let us know that our Fragment has been attached to an activity.
+
+Below is the example code of onAttach() method.
+
+@Override
+public void onAttach(Activity activity) {
+super.onAttach(activity);
+// add your code here which executes when fragment instance is associated
+}
+2. onCreate(): This will be called when creating the fragment. It means when a new fragment instance initializes, which always happens after it attaches to the host.
+
+Below is the example code of onCreate() method.
+
+@Override
+public void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState);
+// add your code here which executes when fragment's instance initializes
+}
+3. onCreateView(): The will be called when it’s time for the fragment to draw its UI(user interface) for the first time. To draw a UI for our fragment we must return a View component from this method that is the root of our fragment’s layout. We can also return null if the fragment does not provide a UI.
+
+Below is the example code of onCreateView() method.
+
+@Override
+public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+View v = inflater.inflate(R.layout.fragment_test, container, false);
+// add your code here to draw the UI for the first time means in this method we can get the reference of the views which are created         // in our xml file
+
+return v;
+}
+4. onViewCreated(): This will be called after onCreateView() method. This method is particularly useful when inheriting the onCreateView() method implementation but we need to configure the resulting views such as with a ListFragment and when to set up an adapter.
+
+Below is the example code of onViewCreated() method.
+
+@Override
+public void onViewCreated(View view, Bundle savedInstanceState) {
+super.onViewCreated(view, savedInstanceState);
+// add your code here which executes after the execution of onCreateView() method.
+
+}
+5. onActivityCreated(): This method is called after the onCreateView() method when the host activity is created. This method indicates that the activity’s onCreate() has completed.
+
+Below is the example code of onActivityCreated() method.
+
+@Override
+public void onActivityCreated(Bundle savedInstanceState) {
+super.onActivityCreated(savedInstanceState);
+// add your code here which executes when the host activity is created.
+}
+6. onStart(): This method is called once the fragment gets visible.
+
+Below is the example code of onStart() method.
+
+@Override
+public void onStart() {
+super.onStart();
+// add your code here which executes when the Fragment gets visible.
+}
+7. onResume(): This method is called when the Fragment is visible and intractable.
+
+Below is the example code of onResume() method.
+
+@Override
+public void onResume() {
+super.onResume();
+// add your code here which executes when the Fragment is visible and intractable.
+}
+8. onPause(): This method is the first indication that the user is leaving the current fragment or fragment is no longer interactable. It occurs when any Fragment Transition processed or Fragment is removed.
+
+Below is the example code of onPause() method.
+
+@Override
+public void onPause() {
+super.onPause();
+// add your code here which executes when user leaving the current fragment or fragment is no longer intractable.
+}
+9. onStop(): This method is called after onPause() method.Fragment going to be stopped by calling onStop(). This method calls when the Fragment is no longer visible. it occurs either after the fragment is about to be removed or Fragment Transition is processed(replace Fragment) or when the host activity stops.
+
+Below is the example code of onStop() method.
+
+@Override
+public void onStop() {
+super.onStop();
+// add your code here which executes Fragment going to be stopped.
+}
+10. onDestroyView(): This method is called when the view and other related resources created in onCreateView() method is removed from the activity’s view hierarchy and destroyed.
+
+Below is the example code of onDestroyView() method.
+
+@Override
+public void onDestroyView() {
+super.onDestroyView();
+// add your code here which executes when the view's and other related resources created in onCreateView() method are removed
+}
+11. onDestroy(): This method is called to do final clean up of the Fragment’s state but Not guaranteed to be called by the Android platform. This method called after onDestroyView() method.
+
+Below is the example code of onDestroy() method.
+
+@Override
+public void onDestroy() {
+super.onDestroy();
+// add your code here which executes when the final clean up for the Fragment's state is needed.
+}
+12. onDetach(): This method called after onDestroy() method to notify that the fragment has been disassociated from its hosting activity means Fragment is detached from its host Activity.
+
+Below is the example code of onDetach() method.
+
+@Override
+public void onDetach() {
+super.onDetach();
+// add your code here which executes when fragment has been disassociated from its hosting activity
+}
+We can share the Data between fragments in 2 ways.
+
+By Using Bundle
+
+By using Persistence Storage
+
+By Using Bundle:-
+
+Bundle bundle=new Bundle();
+bundle.putString("firstName",Fist);
+bundle.putString("LastName",lastN);
+Second Persistence Storage :- this you can check how to store Data in Persistence Storage. Hope it will work for you
+
+fragment passdata to activity or main activity
+android application security best practices for banking application
+challenges faced while duilding application
+
+
+To Activity
+Passing data to activity using the putExtra() directly on the intent.
+
+Intent intent = new Intent(this, MyActivity.class);
+intent.putExtra('my_key', 'My String');
+Passing data to activity using the Bundle from the Intent.
+
+Intent intent = new Intent(this, MyActivity.class);
+Bundle bundle = i.getExtras();
+bundle.putString('my_key', 'My String');
+Passing data to activity using a new Bundle.
+
+Intent intent = new Intent(this, MyActivity.class);
+Bundle bundle = new Bundle();
+bundle.putString('my_key', 'My String');
+intent.putExtras(bundle);
+To retrieve the data from the launched activity in the onCreate method.
+
+String value = getIntent().getExtras().getString('my_key');
+To Fragment
+Create a bunlde and put your key and value to it, then set the argument of the framgent with this bundle.
+
+Bundle bundle = new Bundle();
+bundle.putString("my_key", "My String");
+MyFragment myFrag = new MyFragment();
+myFrag.setArguments(bundle);
+Retrieve the data back in the launched Fragment in the onCreateView method.
+
+1
+String myStr = getArguments().getString("my_key");    
+
+
+Passing Data Between Fragments to Activity
+Pass data from each fragment to activity, when activity gets all data then process it. You can pass data using interfaces.
+
+How to pass values between Fragments
+
+As noted at developer site
+
+Often you will want one Fragment to communicate with another, for example to change the content based on a user event. All Fragment-to-Fragment communication is done through the associated Activity. Two Fragments should never communicate directly.
+
+communication between fragments should be done through the associated Activity.
+
+Let's have the following components:
+
+An activity hosts fragments and allow fragments communication
+
+FragmentA first fragment which will send data
+
+FragmentB second fragment which will receive datas from FragmentA
+
+FragmentA's implementation is:
+
+
+************************* Fragments communiatation
+The latest solution for passing data between fragments can be implemented by using android architectural components such as ViewModel and LiveData. With this solution, you don't need to define interface for communication and can get the advantages of using viewmodel like data survival due to configuration changes.
+
+In this solution, the fragments involved in the communication share the same viewmodel object which is tied to their activity lifecycle. The view model object contains livedata object. One fragment sets data to be passed on livedata object and second fragment observers livedata changes and received the data.
+
+*************************Passing Data between Fragments using ViewModel
+
+You can simplify and provide best solution using ViewModel and LiveData for passing data between two fragments of an activity. 
+ViewModel has other advantages too such as separation of controllers from data handling and avoiding repeated data fetching due to configuration changes 
+like screen rotation as view model is tied to activity lifecycle, for more information on view model see viewmodel tutorial.
+To make passage of data from one fragment to another possible, we need to obtain view model object with activity scope in both fragments. Both fragments get the same view model instance which is tied to activity lifecycle. Item fragment passes item id to the set method of view model which sets the value on LiveData object. Details fragment listens to the live data object defined in the view model and capture the item id, fetches item details and displays it in UI.
+
+
+*************************Android Build Types and Product Flavors
+
+
+
+*************************Is android:exported=“true” really necessary for an authentication service?
+The default value depends on whether the service contains intent filters. The absence of any filters means that it can be invoked only by specifying its exact class name. This implies that the service is intended only for application-internal use (since others would not know the class name). So in this case, the default value is "false". On the other hand, the presence of at least one filter implies that the service is intended for external use, so the default value is "true".
+
+This requires an intent filter, consequently the default value of exported for the service is true. So the answer to this question is "No, the attribute is not necessary - because it's true by default".
+
+
+*************************Start Another Activity “of Another Application”
+You can start another activity of  another application by calling startActivity(), passing it an Intent that has 
+the activity action name defined within <intent-filter> in the AndroidManifest.xml.
+
+*************************Start Another Service “of Another Application”
+
+You don't need to set ACTION or CATEGORY if you are specifying a specific component. Make sure that your service is properly defined in the manifest.
+
+*************************Receiving simple data from other apps
+Just as your application can send data to other applications, so too can it easily receive data from applications. Think about how users interact with your application, and what data types you want to receive from other applications. For example, a social networking application would likely be interested in receiving text content, like an interesting web URL, from another app.
+
+*************************Sending simple data to other apps
+When you construct an intent, you must specify the action you want the intent to "trigger." Android defines several actions, including ACTION_SEND which, as you can probably guess, indicates that the intent is sending data from one activity to another, even across process boundaries. To send data to another activity, all you need to do is specify the data and its type, the system will identify compatible receiving activities and display them to the user (if there are multiple options) or immediately start the activity (if there is only one option). Similarly, you can advertise the data types that your activities support receiving from other applications by specifying them in your manifest.
+
+Sending and receiving data between applications with intents is most commonly used for social sharing of content. Intents allow users to share information quickly and easily, using their favorite applications.
+
+Note: The best way to add a share action item to an ActionBar is to use ShareActionProvider, which became available in API level 14. ShareActionProvider is discussed in the lesson about Adding an Easy Share Action.
+
+*************************What is FileProvider
+ContentProvider is an Android component which encapsulates data and provides it to other applications. It is required only if you need to share data between multiple applications. For example, the contacts data is shared with other applications using ContactsProvider which is a subclass of ContentProvider.
+
+FileProvider is a subclass of ContentProvider. While ContentProvider is a component that enables you to securely share any kind of data, FileProvider is used specifically for sharing the app’s internal files. The FileProvider class is part of the v4 Support Library so make sure to include it in your project.
+
+https://infinum.co/the-capsized-eight/share-files-using-fileprovider
+
+
+*************************android content provider interview questions
+
+Content Provider is your Android system’s middleman, facilitating data interchange between different Android applications.
+Let us get a little into the details of that in this Android tutorial.
+
+Content Provider facilitates access to a central data store or warehouse to allow data sharing and data manipulation across different applications.
+
+Here are a few examples of default Content Providers in Android system’s API:
+
+Android Tutorials: Default Content Providers in Android system
+
+These content providers allow the user abstraction from an underlying database. 
+Generally, Content Providers use SQLite to store underlying database
+
+
+*************************Why does Android System need Content Providers?
+The need for Content Providers arises because the database created in one application is not visible to a second application.
+
+It is simple to create and store database in different applications using SQLite, however the problem is this, a database in Android is private to the application that creates it. There is no common storage area in Android that every application can access. Therefore, for different applications to use a database, Android system needs an interface that allows such inter-application and inter-process data exchange. This is where content provider comes to play.
+
+
+*************************Do I really need a Content Provider?
+1)   You do not need to develop your own provider if you want a private database for a particular application (this database would not be accessible to applications other than the one that created it).
+
+2)   You however need a Custom provider to provide custom search suggestions in your own application system.
+
+3)   You would also need a Content Provider to copy and paste complex data from your application to other applications.
+
+*************************What are the operations supported by a Content Provider?
+
+Content providers support the following basic operations:
+
+1)   Querying: Queries the Content Provider for all the objects, based on the specified URI.
+
+2)   Delete: Deletes the specified objects from the database of a Content Provider.
+
+3)   Update: Makes updates to the objects in the database.
+
+4)   Insert: Inserts new object to the database.
+
+*************************Android Build Types
+In this tutorial, we’ll be discussing Android Build Types and Product Flavors. We’ll see how they make our Android Development easier and faster especially when we’re creating applications with minimal differences. These differences can be as small as changes in themes and app icons or can be for different stages of the product such as dev, beta, production etc.
+
+Create a new project in your Android Studio and choose the Basic activity. In the next section, we’ll look at build types.
+
+
+Once the new project is created, by default it consists of two build types/variants – debug, release.
+
+Debug is the build type that is used when we run the application from the IDE directly onto a device.
+
+A release is the build type that requires you to sign the APK. The release builds are meant to be uploaded to the play store. In the release build type, we obfuscate the code using ProGuard to prevent reverse engineering.
+
+Following image shows the default build types.
+buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+
+        beta{
+            signingConfig signingConfigs.release
+            applicationIdSuffix ".beta"
+            versionNameSuffix "-beta"
+        }
+    }
+
+applicationId suffix appends the string to the applicationId of the application.
+
+versionName does the same on the version name present in the defaultConfig.
+
+BuildConfig
+The BuildConfig.java class is auto-generated when different buildFlavors are created.
+We can set Build Config Fields in our build.gradle.
+
+The BuildConfig.java class and its fields can be accessed by our Activities directly.
+
+We can also add resources fields using in the buildConfigs. Add the following in your beta buildConfig and it’ll be auto-created in the resources | strings.xml folder.
+resValue "string", "my_name", "Anupam Beta"
+---Android Product Flavors
+Android Product Flavors
+Android Product Flavors are used to create different app versions. App versions can be free or paid. They can have different themes and texts. They can use different environments or APIs.
+
+Let’s assign two product flavors free and paid in our application.
+productFlavors{
+
+        free{
+            applicationId "com.journaldev.androidproductflavors.free"
+        }
+
+        paid{
+            applicationId "com.journaldev.androidproductflavors.paid"
+        }
+    }
+	
+	For the above code in the build.gradle to successfully create the flavors we need to set flavor dimensions.
+
+Flavor Dimensions is a way to group flavors by a name. For now, we’re using just a single group.
+
+Add the following line in your defaultConfig block:
+
+
+flavorDimensions "default"
+Now syncing the gradle would give you the following product flavors:
+
+
+Android Build Variants combine build types and product flavors. They create a matrix of all combinations.
+
+Now in our project, the main folder consists of the common logic across all app versions. To write flavor specific code, create the folder with the same name as the flavor.
+
+The java classes with the same name in the flavor folders won’t override the main folder.
+The res folder in the main should only have those directories that are common to all flavors.
+Now let’s create the free and paid folders in our project and create separate res folders for each.
+
+You can set the app name for each product flavor directly in the AndroidManifest.xml file without the need to create separate strings.xml files, using Manifest Placeholders in your build.gradle
+
+https://www.journaldev.com/21533/android-build-types-product-flavors
+
+*************************Android MVP    _________99999
+With our current approach, the MainActivity class contains all the implementation logic of our application. We’ve been using stuff ranging from Retrofit callbacks to data models(SharedPref, POJO classes) all inside the Activity class.
+
+Eventually, our Activities become god classes and cause problems in maintainability, readability, scalability and refactoring an already bloated code.
+
+Unit testing gets tough since the implementation logic is tightly coupled with the Android APIs. This is where MVP ( Model View Presenter) comes in handy. It allows us to write a clean and flexible code base while giving the luxury to switch any part of the code without much hassle.
+
+Model View Presenter
+Model View Presenter divides our application into three layers namely the Model, View and Presenter.
+
+Model: This handles the data part of our application
+Presenter: It acts as a bridge that connects a Model and a View.
+View: This is responsible for laying out views with the relevant data as instructed by the Presenter
+Note: The View never communicates with Model directly.
+
+Android MVP Guidelines
+Activity, Fragment and a CustomView act as the View part of the application.
+The Presenter is responsible for listening to user interactions (on the View) and model updates (database, APIs) as well as updating the Model and the View.
+Generally, a View and Presenter are in a one to one relationship. One Presenter class manages one View at a time.
+Interfaces need to be defined and implemented to communicate between View-Presenter and Presenter-Model.
+The Presenter is responsible for handling all the background tasks. Android SDK classes must be avoided in the presenter classes.
+The View and Model classes can’t have a reference of one another.
+Having covered the theory of MVP architecture, let’s build an android MVP app now.
+
+https://www.journaldev.com/14886/android-mvp
+*************************Login Example with MVVM, DataBinding With LiveData
+https://github.com/umangburman/MVVM-DataBinding-With-LiveData-Login
+
+https://medium.com/@umang.burman.micro/login-example-with-mvvm-databinding-with-livedata-81319048afb0
+
+This is a very simple Login Example using MVVM pattern and DataBinding and LiveData in Android. It takes input from the UI using DataBinding "@=", stores it in LiveData and displays back on the UI.
+
+This example is for those who want to learn the easiest way to get data from UI. This is useful in many ways such as Saving Development Time, Code Reusability, Validations etc. No wonder it is being used all over Android Community.
+
+So let's get started on using these technologies together in a single application:
+
+What is MVVM?
+What is DataBinding?
+What is LiveData?
+Implementation Step-by-Step
+Conclusion
+*************************What is MVVM?
+Answer: MVVM is a design pattern for organizing GUI applications that has become popular on Android.
+
+This concept will introduce you to the main 3 components of MVVM, the View, Model, and ViewModel.
+
+The Model View ViewModel (MVVM) is an architectural pattern used in software engineering that originated from Microsoft which is 
+specialized in the Presentation Model design pattern. It is based on the Model-view-controller pattern (MVC), 
+and is targeted at modern UI development platforms (WPF and Silverlight) in which there is a UX developer who has different 
+requirements than a more "traditional" developer. MVVM is a way of creating client applications that leverages core features of the WPF platform, 
+allows for simple unit testing of application functionality, and helps developers and designers work together with less technical difficulties.
+
+View: A View is defined in XAML and should not have any logic in the code-behind. It binds to the view-model by only using data binding.
+
+Model: A Model is responsible for exposing data in a way that is easily consumable by WPF. It must implement INotifyPropertyChanged and/or INotifyCollectionChanged as appropriate.
+
+ViewModel: A ViewModel is a model for a view in the application or we can say as abstraction of the view. It exposes data relevant to the view and 
+exposes the behaviors for the views, usually with Commands.
+
+
+DWhat is DataBinding?
+Answer: The Data Binding Library is a support library that allows you to bind UI components in your layouts to data sources in your app 
+using a declarative format rather than programmatically and many more.
+
+
+
+*************************What is LiveData?
+Answer: LiveData is an observable data holder class. Unlike a regular observable, LiveData is lifecycle-aware,
+ meaning it respects the lifecycle of other app components, such as activities, fragments, or services. This awareness ensures LiveData 
+ only updates app component observers that are in an active lifecycle state.
+
+Using LiveData provides the following advantages:
+
+Ensures your UI matches your data state: LiveData follows the observer pattern. LiveData notifies Observer objects when the lifecycle state changes.
+ You can consolidate your code to update the UI in these Observer objects. Instead of updating the UI every time the app data changes,
+ your observer can update the UI every time there's a change.
+
+No memory leaks: Observers are bound to Lifecycle objects and clean up after themselves when their associated lifecycle is destroyed.
+
+No crashes due to stopped activities: If the observer's lifecycle is inactive, such as in the case of an activity in the back stack, 
+then it doesn’t receive any LiveData events.
+
+No more manual lifecycle handling: UI components just observe relevant data and don’t stop or resume observation. LiveData automatically manages all 
+of this since it’s aware of the relevant lifecycle status changes while observing.
+
+Always up to date data: If a lifecycle becomes inactive, it receives the latest data upon becoming active again. For example,
+ an activity that was in the background receives the latest data right after it returns to the foreground.
+
+Proper configuration changes: If an activity or fragment is recreated due to a configuration change, like device rotation, 
+it immediately receives the latest available data.
+
+Sharing resources: You can extend a LiveData object using the singleton pattern to wrap system services so that they can be shared in your app.
+ The LiveData object connects to the system service once, and then any observer that needs the resource can just watch the LiveData object. 
+ For more information, see Extend LiveData.
+
+*************************Android LiveData & Examples
+LiveData is provided as a part of android architectural components. LiveData is an observable which can hold and emit data to the subscribed observers. 
+LiveData is similar to RxJava observable with one difference, LiveData is lifecycle aware, this feature allows it to clean up 
+references when the lifecycle state of the component that observer associated with is destroyed.
+
+Android architectural components allow you to build lifecycle aware components. LiveData is a lifecycle aware observable. 
+When observer subscribes to LiveData, lifecycle of the component that observer belong to, is passed to LiveData. 
+As long as the component is active, observer will receive data from LiveData.
+
+https://www.zoftino.com/android-livedata-examples
+
+https://www.zoftino.com/
+*************************What's the difference between commit() and apply() in Shared Preference
+apply() was added in 2.3, it commits without returning a boolean indicating success or failure.
+
+commit() returns true if the save works, false otherwise.
+
+apply() was added as the Android dev team noticed that almost no one took notice of the return value, so apply is faster as it is asynchronous.
+
+
+*************************When and why to use Android LiveData
+“Android Architecture Components,
+Basically, LiveData is an observable data holder. It lets the components in your app, usually the UI, observe LiveData objects for changes.
+The new concept about this LiveData is that it’s lifecycle-aware, meaning it respects the lifecycle state of the app components (activities, fragments) and ensures that LiveData only updates the component (the observer) when it’s in an active lifecycle state. This behavior prevents object leaking and ensures the app doesn’t do more work than it should.
+	
+
+*************************Android Architecture Component ViewModel
+ViewModel is part of architecture component library. ViewModel can be used to delegate the task of preparing and holding data for activities and fragments. 
+ViewModel component separates view and model and it handles communication between view (activity or fragment), and model (data and business logic).
+
+ViewModel is a lifecycle aware component and can exist as long as component it is associated with is not destroyed. 
+ViewModel will not be destroyed when the owner component is destroyed for configuration change like device rotation. 
+This saves network bandwidth and prevents delay in showing the screen as data fetching and computation is not performed because ViewModel can be reused.
+
+
+*************************-dagger-2
+
+*************************
+*************************
+
+5 Best Development Practices for the Security of Mobile Banking Apps
+ Implement sufficient authentication.
+ 
+****************************what is adapters
+https://abhiandroid.com/ui/adapter
+In Android, Adapter is a bridge between UI component and data source that helps us to fill data in UI component. It holds the data and 
+send the data to an Adapter view then view can takes the data from the adapter view and shows the data on different views like as ListView, 
+GridView, Spinner etc. For more customization in Views we uses the base adapter or custom adapters.
+
+To fill data in a list or a grid we need to implement Adapter. Adapters acts like a bridge between UI component and data source. 
+Here data source is the source from where we get the data and UI components are list or grid items in which we want to display that data.
+
+
+BaseAdapter is a common base class of a general implementation of an Adapter that can be used in ListView, GridView, Spinner etc. 
+Whenever we need a customized list in a ListView or customized grids in a GridView we create our own adapter and extend base adapter in that.
+Base Adapter can be extended to create a custom Adapter for displaying a custom list item.  ArrayAdapter is also an implementation of BaseAdapter.
+
+Custom Adapter code which extends the BaseAdapter in that:
+
+public class CustomAdapter extends BaseAdapter {
+
+@Override
+public int getCount() {
+return 0;
+}
+
+@Override
+public Object getItem(int i) {
+return null;
+}
+
+@Override
+public long getItemId(int i) {
+return 0;
+}
+
+@Override
+public View getView(int i, View view, ViewGroup viewGroup) {
+
+return null;
+}
+
+2. ArrayAdapter In Android:
+
+Whenever we have a list of single items which is backed by an Array, we can use ArrayAdapter. For instance, list of phone contacts, countries or names.
+
+
+ArrayAdapter(Context context, int resource, int textViewResourceId, T[] objects)
+
+3. Custom ArrayAdapter In Android:
+
+ArrayAdapter is also an implementation of BaseAdapter, so if we want more customization then we can create a custom adapter and extend 
+ArrayAdapter in that. Since array adapter is an implementation of BaseAdapter, so we can override all the function’s of BaseAdapter in our custom adapter.
+
+Below Custom adapter class MyAdapter extends ArrayAdapter in that:
+
+public class MyAdapter extends ArrayAdapter {
+
+public MyAdapter(Context context, int resource, int textViewResourceId, List objects) {
+super(context, resource, textViewResourceId, objects);
+}
+@Override
+public int getCount() {
+return super.getCount();
+}
+
+@Override
+public View getView(int position, View convertView, ViewGroup parent) {
+return super.getView(position, convertView, parent);
+}
+}
+
+4. SimpleAdapter In Android:
+
+In Android  SimpleAdapter is an easy Adapter to map static data to views defined in an XML file(layout). In Android we can specify the data backing to a list as an ArrayList of Maps(i.e. hashmap or other). Each entry in a ArrayList is corresponding to one row of a list.
+
+The Map contains the data for each row. Here we also specify an XML file(custom list items file) that defines the views which is used to display the row, and a mapping from keys in the Map to specific views.
+
+Whenever we have to create a custom list we need to implement custom adapter. As we discuss earlier ArrayAdapter is used when we have a list of single item’s backed by an Array. So if we need more customization in a ListView or a GridView we need to implement simple adapter.
+
+5. Custom SimpleAdapter In Android:
+
+Whenever we have to create a custom list we need to implement custom adapter. As we discuss earlier ArrayAdapter is used when we have a list of single item’s backed by an Array. So if we need customization in a ListView or a GridView we need to implement simple Adapter but when we need more customization in list or grid items where we have many view’s in a list item and then we have to perform any event like click or any other event to a particular view then we need to implement a custom adapter who fulfills our requirement’s and quite easy to be implemented.
+
+BaseAdapter is the parent adapter for all other adapters so if we extends a SimpleAdapter then we can also override the base adapter’s function in that class.
+
+REST API is standared pattern for an API for another service that we can use programmatically.
+REST is a programming style  whcih describe how data should be transerfeerd between 2 system on the internet.
+  REST API is discribe the geeral rule for how data and services should communiate throught API so then anthoer problem can requesst and respone the data and service when that API make available 
+onNewIntent()	
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&impt ++++++++++++
+1)oops concept
+2)prime num,fact,num reverse
+3)android also normal questions
+4)threads handles custom handlers   https://androidexample.com/Thread_With_Handlers_-_Android_Example/index.php?view=article_discription&aid=58 gud
+5)how to handle exception in asyntask?
+6)week reference in asyntask 
+7)custom thread nd handler  
+6) activity two fragments..how to send data between them
+1)gradle-tutorial-for-android-getting-started
+https://www.raywenderlich.com/249-gradle-tutorial-for-android-getting-started
+2)different data storage options in android
+https://www.androidauthority.com/how-to-store-data-locally-in-android-app-717190/
+3)why we use fragment instead of activity
+https://stackoverflow.com/questions/10478233/why-fragments-and-when-to-use-fragments-instead-of-activities
+4)exception handling in android 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&impt ++++++++++++
+
+//*******************************hybrid
+https://dzone.com/articles/top-5-interview-questions
+https://www.toptal.com/ionic/interview-questions
+
+/*****************************JAVA
+https://www.geeksforgeeks.org/commonly-asked-java-programming-interview-questions-set-1/
+https://www.geeksforgeeks.org/commonly-asked-java-programming-interview-questions-set-2/  -- pending end
+https://www.geeksforgeeks.org/java-gq/inheritance-2-gq/
+https://www.geeksforgeeks.org/quiz-corner-gq/#Java%20Programming%20Mock%20Tests
+https://www.geeksforgeeks.org/java/#Multithreading
+
+
+*****************************android
+https://www.softwaretestinghelp.com/android-interview-questions/
+https://www.testingbrain.com/interview/android-interview-questions.html
+https://www.dev2qa.com/android-broadcast-overview/
+https://www.dev2qa.com/android-send-custom-broadcast-example/
+https://www.simplifiedcoding.net/sqliteopenhelper-tutorial/
+https://www.numetriclabz.com/android-facebook-integration-and-login/
+https://www.tutorialspoint.com/android/android_twitter_integration.htm
+http://skillgun.com/experienced-placement-papers/placement-papers
+https://www.journaldev.com/13639/retrofit-android-example-tutorial
+https://stackoverflow.com/questions/26728651/recyclerview-vs-listview
+https://www.geeksforgeeks.org/singleton-design-pattern/
+https://developer.android.com/training/articles/security-tips
+what-is-real-difference-between-stack-memory-and-heap-memory
+
+1) Both stack and heap are stored in memory(RAM). In multithread each thread have it's own stack whereas different thread share heap.
+2) One of the big difference between stack and heap is size , stack size is fixed i.e. we get stackoverflow error , whereas heap size is operated by OS and can be change according to the needs. 
+3) Stack is much faster than a heap . Since in stack memory allocation is easy and moving the stack pointer up.
+4) For programming purpose , it's better to use stack rather than heap bcz it's easier to allocate memory on stack. 
+If size of data is small use stack if not use heap .
+There are many links on net where can get more information about heap and stack
+
+Heap memory is used by all the parts of the application whereas stack memory is used only by one thread of execution.
+Whenever an object is created, it’s always stored in the Heap space and stack memory contains the reference to it. Stack memory only contains local primitive variables and reference variables to objects in heap space.
+Objects stored in the heap are globally accessible whereas stack memory can’t be accessed by other threads.
+Memory management in stack is done in LIFO manner whereas it’s more complex in Heap memory because it’s used globally. Heap memory is divided into Young-Generation, Old-Generation etc, more details at Java Garbage Collection.
+Stack memory is short-lived whereas heap memory lives from the start till the end of application execution.
+We can use -Xms and -Xmx JVM option to define the startup size and maximum size of heap memory. We can use -Xss to define the stack memory size.
+When stack memory is full, Java runtime throws java.lang.StackOverFlowError whereas if heap memory is full, it throws java.lang.OutOfMemoryError: Java Heap Space error.
+Stack memory size is very less when compared to Heap memory. Because of simplicity in memory allocation (LIFO), stack memory is very fast when compared to heap memory.
+
+
+
+2)Why does an image captured using camera intent gets rotated on some devices on Android?
+
+338
+down vote
+accepted
+Most phone cameras are landscape, meaning if you take the photo in portrait, the resulting photos will be rotated 90 degrees. 
+In this case, the camera software should populate the Exif data with the orientation that the photo should be viewed in.
+
+Note that the below solution depends on the camera software/device manufacturer populating the Exif data,
+ so it will work in most cases, but it is not a 100% reliable solution.
+
+ExifInterface ei = new ExifInterface(photoPath);
+int orientation = ei.getAttributeInt(ExifInterface.TAG_ORIENTATION,
+                                     ExifInterface.ORIENTATION_UNDEFINED);
+
+Bitmap rotatedBitmap = null;
+switch(orientation) {
+
+    case ExifInterface.ORIENTATION_ROTATE_90:
+        rotatedBitmap = rotateImage(bitmap, 90);
+        break;
+
+    case ExifInterface.ORIENTATION_ROTATE_180:
+        rotatedBitmap = rotateImage(bitmap, 180);
+        break;
+
+    case ExifInterface.ORIENTATION_ROTATE_270:
+        rotatedBitmap = rotateImage(bitmap, 270);
+        break;
+
+    case ExifInterface.ORIENTATION_NORMAL:
+    default:
+        rotatedBitmap = bitmap;
+}
+Here is the rotateImage method:
+
+public static Bitmap rotateImage(Bitmap source, float angle) {
+    Matrix matrix = new Matrix();
+    matrix.postRotate(angle);
+    return Bitmap.createBitmap(source, 0, 0, source.getWidth(), source.getHeight(),
+                               matrix, true);
+}
+
+/************LINK ******************/
+https://stackoverflow.com/questions/14066038/why-does-an-image-captured-using-camera-intent-gets-rotated-on-some-devices-on-a
+/************LINK ******************/
+
+3)Why do we set content view in onCreate() and not in onStart() or onResume()?
+As onCreate() of an Activity is called only once,
+ this is the point where most initialization should go:
+ calling setContentView(int) to inflate the activity's UI,
+ using findViewById to programmatically interact with widgets in the UI, 
+ calling managedQuery(android.net.Uri , String[], String, String[], String) to retrieve cursors for data being displayed, etc.
+
+It is inefficient to set the content in onResume() or onStart() (which are called multiple times) as the setContentView() is a heavy operation.
+
+https://stackoverflow.com/questions/33973399/why-do-we-set-content-view-in-oncreate-and-not-in-onstart-or-onresume/33973510
+
+4)How will you go about creating an in house GPS map system with Bluetooth
+
+INDOOR NAVIGATION USING BLUETOOTH
+Since GPS does not work indoors, Bluetooth is a good alternative for indoor positioning and indoor navigation. 
+Bluetooth beacons are able to send out signals, but they can’t receive them. 
+They are relatively cheap, can run on button cells up to two years and have a maximum range of 30 meters indoors.
+ Accuracy is up to one meter. On the one hand they are used in client based solutions, that is to say, 
+ positioning via app on the smartphone itself. In this case, Bluetooth must be activated on the device.
+ On the other hand, server based tracking solutions using beacons are possible as well.
+
+For positioning in client based applications, several beacons are required. They send out unique signals with which the app determines the position 
+by means of fingerprinting. Based on beacons, it is possible to trigger an action, for example displaying a coupon or information on the smartphone.
+
+APPLICATION AREAS OF BEACON INDOOR NAVIGATION
+Currently, Bluetooth beacons are mostly applied in stationary trading. They connect the online and offline world and are supposed to increase sales at the point of sale (POS), for example by means of coupons or advertisements. Also, navigation in complex buildings and detailed information about exhibits in museums and at trade fairs are much asked for.
+
+It is also possible to analyze visitor flows. Based on that information, products in shops can be arranged perfectly or walking routes can be optimized. The technical possibilities offer a lot of opportunities to provide the customer, visitor, patient, employee or traveler relevant information at the right time and at the right place.
+
+https://www.infsoft.com/blog-en/articleid/41/indoor-navigation-indoor-positioning-using-bluetooth#
+
+5)How will you create a circle with color by using XML only
+http://devdeeds.com/android-create-round-shape-using-xml/
+
+6)how to create ocr application in android
+https://medium.com/@prakash_pun/text-recognition-for-android-using-google-mobile-vision-a8ffabe3f5d6
+
+7)What is the difference between an interface and abstract class.
+http://www.coderzheaven.com/2013/02/07/write-interfaces-java-android/
+https://javapapers.com/core-java/abstract-and-interface-core-java-2/difference-between-a-java-interface-and-a-java-abstract-class/
+https://examples.javacodegeeks.com/java-basics/java-abstract-class-example/
+
+
+8)Find maximum number in an array with increasing and then decreasing numbers
+https://www.geeksforgeeks.org/find-the-maximum-element-in-an-array-which-is-first-increasing-and-then-decreasing/
+https://www.geeksforgeeks.org/given-a-sorted-and-rotated-array-find-if-there-is-a-pair-with-a-given-sum/
+
+
+9) Add two numbers represented by linked lists and represent the sum in third linked list.
+https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/
+
+10)20 odd questions about activity base class, fragments types, service’s base class, Content Providers Funtions, Loaders Functions and Out Of Bound Errors.
+
+11)Android Objective type Question and Answers 
+http://madhusudhanrc.blogspot.com/2012/09/android-objective-type-question-and.html
+
+
+12) android Question 
+http://skillgun.com/android/activities/interview-questions-and-answers/paper/415	
+
+13)What is lifecycle of Fragment
+https://www.tutorialspoint.com/android/android_fragments.htm
+
+https://androidadvanced.com/2017/02/27/fragment-lifecycle-during-fragment-transaction/  IMPPPPPPPPPPPPPP
+
+14)What is IPC and architecture of an app using .so file having its API exposed with IPC.
+IPC is inter-process communication. It describes the mechanism how different types of android components are communicated.
+
+1) Intents are messages which components can send and receive. It is a universal mechanism of passing data between processes.
+ With help of the intents one can start services or activities, invoke broadcast receivers and so on.
+
+2) Bundles are entities the data is passed through. It is similar to the serialization of an object, but much faster on android.
+ Bundle can be got from intent via the getExtras() method.
+
+3) Binders are the entity which allows activities and services obtain a reference to another services. 
+It allows not simply send messages to services but directly invoke methods on them.
+
+)=====================
+https://stackoverflow.com/questions/5740324/what-are-the-ipc-mechanisms-available-in-the-android-os
+
+All the answers are good and concise in this post. But i would like to light upon which IPC mechanism should i use. 
+First of all IPC means Inter Process communication where two applications or processes will communicate with each other by passing some data between them.
+ Since android is meant for embedded and small devices, we should not use serialization for IPC, rather we can use BINDERs which internally uses parcels. 
+ Parcel is a sort of light weight serialization by using shared memory concept.
+
+There are many differences between Binder IPC and Serialization IPC:
+
+1. Serialization is very heavy to use in embedded devices, communication will be very slow.
+
+2. Binders uses Parcels to make IPC very fast.
+
+3. Binders internally uses Shared memory concept which uses less memory while sharing data between two processes.
+
+Bottom Line: Binders uses less memory, and quite fast as it uses parcels. Serialization is very heavy, takes time to send and receive data, 
+and also it takes more memory compared to binders.
+
+Note: To pass data between activities, services, and receivers use only Bundles. Don't go for either serialization or binders. 
+Binders are specifically used only for binder services where 2 processes will communicate.
+
+Hope this Helps :)
+
+15)Binary Search
+
+16)https://stackoverflow.com/questions/1035008/what-is-the-difference-between-set-and-list
+List
+
+Is an Ordered grouping of elements.
+List is used to collection of elements with duplicates.
+New methods are defined inside List interface.
+Set
+
+Is an Unordered grouping of elements.
+Set is used to collection of elements without duplicates.
+No new methods are defined inside Set interface, so we have to use Collection interface methods only with Set subclasses.
+17)http://skillgun.com/android-ivy-mobility/placement-papers
+
+18)https://www.geeksforgeeks.org/android-system-architecture/
+
+19)https://www.geeksforgeeks.org/app-development-android-2017-challenges-solutions/
+
+
+20)=====================LayoutInflater
+
+Inflate gives you the object reference to that layout to call findViewById on. 
+LayoutInflater is used to manipulate Android screen using predefined XML layouts. This class is used to instantiate layout XML file into its corresponding View objects. It is never used directly.
+
+
+LayoutInflater is used to manipulate Android screen using predefined XML layouts.
+This class is used to instantiate layout XML file into its corresponding View objects.
+
+It is never used directly. Instead,
+
+use getLayoutInflater() or getSystemService(String) to retrieve a standard LayoutInflater instance that is already hooked up to the current context.
+
+
+
++++++++++++++++++
+intent is an a messagesing object wch is passing b/w android component such as activity ,
+implicit - action declaration
+explicit - set a sppecific component like custome component 
+
+=====================
+
+Volley Library in Android
+
+=====================
+
+Volley is an HTTP library that makes networking very easy and fast, for Android apps. It was developed by Google and introduced during Google I/O 2013.
+ It was developed because there is an absence in Android SDK, of a networking class capable of working without interfering with the user experience.
+ Although Volley is a part of the Android Open Source Project(AOSP), Google announced in January 2017 that Volley will move to a standalone library.
+ It manages the processing and caching of network requests and it saves developers valuable time from writing the same network call/cache code again and again.
+
+Volley is suitable for large download or streaming operations since Volley holds all responses in memory during parsing.
+
+Features of Volley:
+
+Request queuing and prioritization
+Effective request cache and memory management
+Extensibility and customization of the library to our needs
+Cancelling the requests
+Advantages of using Volley:
+
+All the task that need to be done with Networking in Android, can be done with the help of Volley.
+Automatic scheduling of network requests.
+Catching
+Multiple concurrent network connections.
+Cancelling request API.
+Request prioritization.
+Volley provides debugging and tracing tools.
+
+
+Android volley is a networking library was introduced to make networking calls much easier, faster without writing tons of code. 
+By default all the volley network calls works asynchronously, so we don’t have to worry about using asynctask anymore.
+
+Volley comes with lot of features. Some of them are
+
+1. Request queuing and prioritization
+2. Effective request cache and memory management
+3. Extensibility and customization of the library to our needs
+4. Cancelling the requests
+=====================
+=====================
+Singleton Class in Java
+=====================
+
+n object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time.
+After first time, if we try to instantiate the Singleton class, the new variable also points to the first instance created.
+ So whatever modifications we do to any variable inside the class through any instance,
+ it affects the variable of the single instance created and is visible if we access that variable through any variable of that class type defined.
+To design a singleton class:
+
+Make constructor as private.
+Write a static method that has return type object of this singleton class. Here, the concept of Lazy initialization in used to write this static method.
+
+What is the purpose of Singleton?
+The purpose of the Singleton class is to control object creation, limiting the number of objects to only one.
+ The singleton allows only one entry point to create the new instance of the class.
+
+Since there is only one Singleton instance, any instance fields of a Singleton will occur only once per class, just like static fields. 
+Singletons are often useful where you have to control the resources, such as database connections or sockets.
+
+It seems to be a simple design pattern but when it comes to implementation, it comes with a lot of implementation concerns. The implementation of Singleton pattern has always been a controversial topic among developers. Here, you are going to discuss how to create a Singleton class that fulfills its purpose :
+https://www.androidhive.info/2014/05/android-working-with-volley-library-1/
+https://www.geeksforgeeks.org/singleton-class-java/
+https://www.androidhive.info/2014/05/android-working-with-volley-library-1/
+
+android.net.wifi.WIFI_STATE_CHANGED
+
+Types of Broadcasts
+There are two types of broadcasts received by receivers and they are:
+
+**********************
+1. Normal Broadcasts:
+
+These are asynchronous broadcasts.
+Receivers of this type of broadcasts may run in any order, sometimes altogether.
+This is efficient.
+Receivers cannot use the result.
+They cannot abort the included APIs.
+These broadcasts are sent with Context.sendBroadcast
+2. Ordered Broadcasts
+
+These are synchronous broadcasts.
+One broadcast is delivered to one receiver at a time.
+Receivers can use the result. In fact as each receiver executes, result is passed to next receiver.
+Receiver can abort the broadcast and hence no broadcast is received by other receivers.
+The order of receivers is managed and controlled by the attribute android:priority in corresponding intent-filter.
+If receivers will have same priority then they may run in any order.
+Take a quick Glance at : Top 25 Android Interview Questions and Answers
+
+3)Sticky (broadcast) intents
+An intent to trigger a receiver ( broadcast intent ) is not available anymore after it was sent and processed by the system. 
+If you use the sendStickyBroadcast(Intent) method,
+ the corresponding intent is sticky, meaning the intent you are sending stays around after the broadcast is complete.
+
+Benefits of Broadcast Receiver
+
+4)LocalBroadcastManager?
+For obvious reasons, global broadcasts must never contain sensitive information. You can, however, 
+broadcast such information locally using the LocalBroadcastManager class, which is a part of the Android Support Library.
+The LocalBroadcastManager is much more efficient as it doesn’t need inter-process communication.
+
+Broadcast data won’t leave your app, so don’t need to worry about leaking private data.
+It is not possible for other applications to send these broadcasts to your app, so you don’t need to worry about having security holes they can exploit.
+It is more efficient than sending a global broadcast through the system.
+No overhead of system-wide broadcast.
+
+Intent Filter
+
+
+An intent filter is an expression in an app's manifest file that specifies the type of intents that the component would like to receive. For instance, by declaring an intent filter for an activity, you make it possible for other apps to directly start your activity with a certain kind of intent. Likewise, if you do not declare any intent filters for an activity, then it can be started only with an explicit intent.
+
+
+Android PendingIntent
+Android PendingIntent is an object that wraps up an intent object and it specifies an action to be taken place in future. In other words, PendingIntent lets us pass a future Intent to another application and allow that application to execute that Intent as if it had the same permissions as our application, whether or not our application is still around when the Intent is eventually invoked.
+
+A PendingIntent is generally used in cases were an AlarmManager needs to be executed or for Notification (that we’ll implement later in this tutorial). A PendingIntent provides a means for applications to work, even after their process exits.
+
+
+
+**********************when is smart to use bindService and when startService *****************
+You usually use bindService() if your calling component(Activity) will need to communicate with the Service that you are starting, 
+through the ServiceConnection. If you do not want to communicate with the Service you can use just startService().
+ You Can see below diffrence between service and bind service.
+
+From the docs :
+
+Started
+
+A service is "started" when an application component (such as an activity) starts it by calling startService(). 
+Once started, a service can run in the background indefinitely, even if the component that started it is destroyed.
+ Usually, a started service performs a single operation and does not return a result to the caller. 
+ For example, it might download or upload a file over the network. When the operation is done, the service should stop itself.
+
+Bound
+
+A service is "bound" when an application component binds to it by calling bindService(). A bound service offers a client-server interface 
+that allows components to interact with the service, send requests, get results, and even do so across processes with interprocess communication (IPC).
+ A bound service runs only as long as another application component is bound to it. Multiple components can bind to the service at once, 
+ but when all of them unbind, the service is destroyed.
+
+**********************Volley vs Retrofit
+
+Android Async HTTP Clients: Volley vs Retrofit
+
+With Volley, you specify the entire endpoint dynamically (parameters and all) at the time of making the API call. By default, Volley returns a JSONObject 
+or a JSONArray depending on the type of request.
+
+https://www.vogella.com/tutorials/Retrofit/article.html#retrofit
+
+Retrofit is a REST Client for Java and Android. It makes it relatively easy to retrieve and upload JSON (or other structured data) 
+via a REST based webservice. In Retrofit you configure which converter is used for the data serialization. 
+Typically for JSON you use GSon, but you can add custom converters to process XML or other protocols. Retrofit uses the OkHttp library for HTTP requests.
+
+You can generate Java objects based on JSON using the following tool: http://www.jsonschema2pojo.org/ This can be useful to 
+create complex Java data structures from existing JSON.
+
+1.2. Using Retrofit
+To work with Retrofit you basically need the following three classes:
+
+Model class which is used as a JSON model
+
+Interfaces that define the possible HTTP operations
+
+Retrofit.Builder class - Instance which uses the interface and the Builder API to allow defining the URL end point for the HTTP operations.
+
+
+Volley-
+
+No automatic parsing
+Caching Mechanism
+Retry policy
+inbuilt image loading support
+Retrofit-
+
+Automatic JSON parsing
+No Caching mechanism
+no retry policy
+no Image loading
+
+
+
+**********************Android App Development Fundamentals for Beginners
+Android is an operating system which is build basically for Mobile phones. 
+It is based on the Linux Kernel and other open sources softwares and is developed by Google. 
+It is used for touchscreen mobile devices such as smartphones and tablets. 
+But nowadays these are used in Android Auto cars, TV, watches, camera,etc. 
+It has been one of the best-selling OS for smartphones. Android OS was developed by Android Inc. 
+which Google bought in 2005. Various applications (apps) like games, music player, camera, etc. are build for these smartphones for running on Android. Google Play store features more than 3.3 million apps. The app is developed on an application known as Android Studio. These executable apps are installed through a bundle or package called APK(Android Package Kit).
+
+Android Fundamentals
+Android Programming Languages : In Android, basically programming is done in two languages JAVA or C++ and XML(Extension Markup Language). 
+Nowadays KOTLIN is also preferred. The XML file deals with the design, presentation, layouts, blueprint,etc (as a front-end) 
+while the JAVA or KOTLIN deals with working of buttons, variables, storing, etc (as a back-end).
+Android Components :The App components are the building blocks of Android. Each components have their own role and life-cycles 
+i.e from launching of an app till the end. Some of these components depend upon other also. Each component have a definite purpose.
+The four major app components are:
+
+Activities : It deals with the UI and the User interactions to the screen. In other words, it is a User Interface that contains activities. 
+These can be one or more depending upon the App. It starts when the application is launched. Atleast one activity is always present which is 
+known as MainActivity.
+The activity is implemented through the following Syntax:
+
+ public class MainActivity extends Activity{
+  // processes
+}
+Services : Services are the background actions performed by the app, 
+these might be long running operations like a user playing music while surfing the Internet.
+ A service might need another sub-services so as to perform a specific tasks.
+ The main purpose of the Services is to provide non-stop working of the app without breaking any interaction with the user.
+Syntax:
+  public class MyServices extends Services{
+  //code for the services
+}
+Broadcast Receivers : A Broadcast is used to respond to the messages from other applications or from the System. For example, 
+when the Battery of the phone is low, then the Android OS fires a Broadcasting message to launch Battery Saver function or app, 
+after receiving the message the appropriate action is taken by the app. Broadcast Receiver is the subclass of BroadcastReceiver 
+class and each object is represented by an Intent objects.
+Syntax:
+
+public class MyReceiver extends BroadcastReceiver{
+   public void onReceive(context,intent){
+   }
+
+Content Provider : Content Provider is used to transfer the data from one application to the others on request of the other application. 
+These are handled by the class ContentResolver class. These class implements a set of APIs(Application Programming Interface) 
+that enables the other applications to perform the transactions. Any Content Provider must implement the Parent Class of ContentProvider class.
+Syntax:
+
+public class MyContentProvider extends ContentProvider{
+   public void onCreate()
+   {}
+}
+Structural Layout Of Android Application
+
+
+The above figure represents the various structure of an app.
+
+Android Mainfest is a XML file which is the root of the project source set. It describes the essential information about the app and the Android build tools, the Android Operating System and the Google Play. It contains the permission that an app might need in order to perform the specific task. It also contains the Hardware and the Software features of the app, which determines the compatibility of an app on Play Store. It also includes the special activities like services, broadcast receiver, content providers, package name,etc.
+The JAVA folder consist of the java files that are required to perform the background task of the app. It consist of the functionality of the buttons, calculation, storing, variables, toast(small popup message) , programming function, etc. The number of these files depends upon the type of activities created.
+Res or Resource folder consist of the various resources that are used in the app. This consist of sub-folders like drawable, layout, mipmap, raw and values. The drawable consist of the images. The layout consist of the XML files that defines the user interface layout. These are stored in res.layout and are accessed as R.layout class. The raw consist of the Resources files like audio file or music file,etc. These are accessed through R.raw.filename. values are used to store the hardcoded strings(considered safe to store string values) values, integers and colors. It consist of various other directories like:-
+R.array :arrays.xml for resource arrays
+R.integer : integers.xml for resource integers
+R.bool : bools.xml for resource boolean
+R.color :colors.xml for color values
+R.string : strings.xml for string values
+R.dimen : dimens.xml for dimension values
+R.style : styles.xml for styles
+
+********************************************
+
+Gradle: Gradle is an advance toolkit, which is used to manage the build process, that allows to define the flexible custom build configurations. 
+Each build configuration can define its own set of code and resources,
+ while reusing the parts common to all versions of your app. 
+ The Android plugin for Gradle works with the build toolkit to provide processes and 
+ configurable settings that are specific to building and testing Android applications. Gradle and the Android plugin run independent of Android Studio.
+ This means that you can build your Android apps from within Android Studio. 
+ The flexibility of the Android build system enables you to perform custom build configurations without modifying your app’s core source files.
+
+Gradle is an advanced general purpose build management system based on Groovy and Kotlin. 
+Gradle supports the automatic download and configuration of dependencies or other libraries.
+ It supports Maven and Ivy repositories for retrieving these dependencies. This allows reusing the artifacts of existing build systems.
+
+Android Studio uses Gradle, an advanced build toolkit, to automate and manage the build process,
+ while allowing you to define flexible custom build configurations.
+. Each build configuration can define its own set of code and resources
+
+The build process for a typical Android app module, as shown in figure 1, follows these general steps:
+
+The compilers convert your source code into DEX (Dalvik Executable) files, which include the bytecode that runs on Android devices, 
+and everything else into compiled resources.
+The APK Packager combines the DEX files and compiled resources into a single APK. Before your app can be installed and deployed onto an Android device,
+ however, the APK must be signed.
+The APK Packager signs your APK using either the debug or release keystore:
+If you are building a debug version of your app, that is, an app you intend only for testing and profiling, 
+the packager signs your app with the debug keystore. Android Studio automatically configures new projects with a debug keystore.
+If you are building a release version of your app that you intend to release externally, the packager signs your app with the release keystore.
+ To create a release keystore, read about signing your app in Android Studio.
+Before generating your final APK, the packager uses the zipalign tool to optimize your app to use less memory when running on a device.
+At the end of the build process, you have either a debug APK or release APK of your app that you can use to deploy, test, or release to external users.
+////////////////////https://developer.android.com/studio/build
+Custom build configurations
+
+--Build Types
+Build types define certain properties that Gradle uses when building and packaging your app,
+and are typically configured for different stages of your development lifecycle. 
+For example, the debug build type enables debug options and signs the APK with the debug key, 
+while the release build type may shrink, obfuscate, and sign your APK with a release key for distribution. 
+You must define at least one build type in order to build your app—Android Studio creates the debug and release build types by default.
+ To start customizing packaging settings for your app, learn how to Configure Build Types.
+--Product Flavors
+Product flavors represent different versions of your app that you may release to users, 
+such as free and paid versions of your app. You can customize product flavors to use different code and resources,
+ while sharing and reusing the parts that are common to all versions of your app. 
+ Product flavors are optional and you must create them manually. To start creating different versions of your app, 
+ learn how to Configure Product Flavors.
+--Build Variants
+A build variant is a cross product of a build type and product flavor, and is the configuration Gradle uses to build your app. 
+Using build variants, you can build the debug version of your product flavors during development, 
+or signed release versions of your product flavors for distribution. Although you do not configure build variants directly,
+ you do configure the build types and product flavors that form them. Creating additional build types or product flavors also creates additional 
+ build variants. To learn how to create and manage build variants, read the Configure Build Variants overview.
+--Manifest Entries
+You can specify values for some properties of the manifest file in the build variant configuration. 
+These build values override the existing values in the manifest file. This is useful if you want to generate multiple APKs for your modules 
+where each of the apk files has a different application name, minimum SDK version, or target SDK version. 
+When multiple manifests are present, Gradle merges manifest settings.
+--Dependencies
+The build system manages project dependencies from your local filesystem and from remote repositories. 
+This prevents you from having to manually search, download, and copy binary packages of your dependencies into your project directory.
+ To find out more, see Add Build Dependencies.
+--Signing
+The build system enables you to specify signing settings in the build configuration, and it can automatically sign your APKs during the build process. The build system signs the debug version with a default key and certificate using known credentials to avoid a password prompt at build time. The build system does not sign the release version unless you explicitly define a signing configuration for this build. If you do not have a release key, you can generate one as described in Sign Your App.
+--ProGuard
+The build system enables you to specify a different ProGuard rules file for each build variant.
+ The build system can run ProGuard to shrink and obfuscate your classes during the build process.
+--Multiple APK Support
+The build system enables you to automatically build different APKs that each contain only the code and resources needed for a specific screen 
+density or Application Binary Interface (ABI). For more information see Build multiple APKs.
+
+
+--The Gradle settings file
+The settings.gradle file, located in the root project directory, tells Gradle which modules it should include when building your app. For most projects, the file is simple and only includes the following:
+
+--The top-level build file
+The top-level build.gradle file, located in the root project directory, defines build configurations that apply to all modules in your project. By default, the top-level build file uses the buildscript block to define the Gradle repositories and dependencies that are common to all modules in the project. The following code sample describes the default settings and DSL elements you can find in the top-level build.gradle after creating a new project.
+
+--Configure project-wide properties
+For Android projects that include multiple modules, it may be useful to define certain properties at the project level and share them across all the modules. You can do this by adding extra properties to the ext block in the top-level build.gradle file.
+
+--The module-level build file
+The module-level build.gradle file, located in each project/module/ directory, allows you to configure build settings for the specific module it is located in. Configuring these build settings allows you to provide custom packaging options, such as additional build types and product flavors, and override settings in the main/ app manifest or top-level build.gradle file.
+
+This sample Android app module build.gradle file outlines some of the basic DSL elements and settings that you should know.
+Basic Layout Can be defined in tree structure as:
+
+Project/
+   app/
+      manifest/
+         AndroidManifest.xml
+   java/
+      MyActivity.java   
+      res/
+         drawable/  
+            icon.png
+            background.png
+         drawable-hdpi/  
+            icon.png
+            background.png  
+         layout/  
+            activity_main.xml
+            info.xml
+         values/  
+            strings.xml 
+Lifecycle of Android App
+The Lifecycle of the Android App can be shown through this diagram:
+
+
+
+States of Android Lifecycle
+
+OnCreate : This is called when activity is first created.
+OnStart : This is called when activity become visible to the user.
+OnResume : This is called when activity starts to interact with the user.
+OnPause : This is called when activity is not visible to the user.
+OnStop : This is called when activity is no longer visible.
+OnRestart : This is called when activity is stopped, and restarted again.
+OnDestroy : This is called when activity is to be closed or destroyed.
+To know more about Android Click :Here
+To know about the Installation and Setup Click :Installation
+
+
+service  --
+https://www.journaldev.com/20735/android-intentservice-broadcastreceiver
+
+
+*************************what is web service
+It is a client-server application or application component for communication.
+The method of communication between two devices over the network.
+It is a software system for the interoperable machine to machine communication.
+It is a collection of standards or protocols for exchanging information between two devices or application.
+
+So web service is a language independent way of communication.
+
+
+Types of Web Services
+There are mainly two types of web services.
+
+SOAP web services.
+RESTful web services.
+
+
+Introduction to JSON
+JSON (JavaScript Object Notation) is most widely used data format for data interchange on the web. 
+This data interchange can happen between two computers applications at different geographical locations or running within same hardware machine.
+
+The good thing is that JSON is a human and machine readable format.
+ So while applications/libraries can parse the JSON data – humans can also look at data and derive meaning from it.
+
+A JSON document may contains text, curly braces, square brackets, colons, commas, double quotes, and maybe a few other characters.
+
+Primarily, JSON is built on two structures:
+
+A collection of name/value pairs. In various languages, this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array.
+An ordered list of values. In most languages, this is realized as an array, vector, list, or sequence.
+
+
+
+common android questions
+
+https://androidquestions.quora.com/Android-interview-questions-for-2-5-yrs-experienced?ch=3&share=5b6b9017&srid=pUyp4
+
+
+*************************What is ViewHolder in Android's Adapter class?
+
+ViewHolder is a design pattern which can be applied when using a custom adapter. 
+Every time when the adapter calls getView() method, the findViewById() method is also called. 
+This is a very intensive work for the mobile CPU and so affects the performance of the application and the battery consumption increases.
+
+To avoid this, ViewHolder is used. A 
+ViewHolder holds the reference to the id of the view resource and calls to the resource will not be required. Thus performance of the application increases.
+
+
+
+*************************prime number
+
+prime number  is a number. is greater than 1 and prime number cant be divdied my any other number then itself and 1.
+
+A prime number is a whole number greater than 1 whose only factors are 1 and itself. 
+A factor is a whole numbers that can be divided evenly into another number. The first few prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23 and 29.
+**************************************************
+Intent - is a message passing mechanism between components of Android, except for Content Provider. You can use Intent to start any component.
+
+Sticky Intent - Sticks with Android, for future broadcast listeners. For example if BATTERY_LOW event occurs then that Intent will stick with Android so 
+that any future requests for BATTERY_LOW, will return the Intent.
+
+Pending Intent - If you want some one to perform any Intent operation at future point of time on behalf of you, then we will use Pending Intent.
