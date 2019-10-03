@@ -2301,7 +2301,7 @@ You can set the app name for each product flavor directly in the AndroidManifest
 
 https://www.journaldev.com/21533/android-build-types-product-flavors
 
-*************************Android MVP    _________99999
+*************************Android MVP    _________99999999999999999999999999999999999999999999
 With our current approach, the MainActivity class contains all the implementation logic of our application. We’ve been using stuff ranging from Retrofit callbacks to data models(SharedPref, POJO classes) all inside the Activity class.
 
 Eventually, our Activities become god classes and cause problems in maintainability, readability, scalability and refactoring an already bloated code.
